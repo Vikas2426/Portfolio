@@ -29,6 +29,24 @@
 h1{
 text-align: center;
 }
+.links{
+  background-color: rgb(2, 2, 2);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 15px;
+}
+
+#insta{
+  flex: 1;
+}
+#linkedin{
+  flex: 1;
+}
+
+#github{
+  flex: 1;
+}
 
 h3{
   text-align: center;
