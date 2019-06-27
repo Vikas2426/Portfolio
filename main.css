@@ -4,8 +4,8 @@
 
 .site-header {
   /* background-color:#263137;  */
-  /* background-color: 191812; */
-  background-image: linear-gradient(to top, #f7f6e4, #070f16);
+  background-color: rgb(35, 175, 180);
+  /* background-image: linear-gradient(to top, #f7f6e4, #070f16); */
   color: #d7e6e6;
   height: 100vh;
   font-family: monospace;
@@ -24,28 +24,28 @@
   height: 200px;
   width: 200px;
   align-self: center;
-  box-shadow: #0a8269 5px 10px 10px;
+  box-shadow: #313333 5px 10px 10px;
 }
 h1{
 text-align: center;
 }
 .links{
-  background-color: rgb(2, 2, 2);
 display: flex;
 align-items: center;
 justify-content: center;
 border-radius: 15px;
+
 }
 
 #insta{
-  flex: 1;
+ margin: 6px;
 }
 #linkedin{
-  flex: 1;
+  margin: 3px;
 }
 
 #github{
-  flex: 1;
+  margin: 3px;
 }
 
 h3{
