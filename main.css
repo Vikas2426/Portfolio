@@ -12,8 +12,6 @@
   align-items: center;
 
 }
-
-
 .profile-pic {
   
   border-radius: 50%;
@@ -60,7 +58,8 @@ h3{
 .projects{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  
 }
 #portfolio{
   position: relative;
@@ -131,24 +130,12 @@ h3{
   visibility: visible;
   opacity: 1;
 }
-#expenseApp{
-  margin: 10px;
-  height: 150px;
-  width: 300px;
-}
-  
-#clickMusic{
-  margin: 10px;
-  height: 150px;
-  width: 300px;
-}
 
-#clickMusic:hover {
-  
 
-}
 body {
   margin: 0;
+}
+.container{
   display: flex;
   flex-direction: column;
 }
