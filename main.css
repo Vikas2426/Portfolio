@@ -58,13 +58,14 @@ h3{
   }
 
 img{
-  height:22vh;
-  width: 22vw;
+  height:150px;
+  width: 300px;
 }
 .projects{
   display: flex;
   align-items: center;
   justify-content: space-around;  
+  flex-wrap: wrap;
 }
 #portfolio{
   position: relative;
