@@ -4,7 +4,7 @@
   background-color: rgb(35, 175, 180);
   /* background-image: linear-gradient(to top, #f7f6e4, #070f16); */
   color: #d7e6e6;
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   font-family: monospace;
   display: flex;
@@ -56,11 +56,15 @@ h3{
     border-radius: 50px
     
   }
+
+img{
+  height:22vh;
+  width: 22vw;
+}
 .projects{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  
+  justify-content: space-around;  
 }
 #portfolio{
   position: relative;
