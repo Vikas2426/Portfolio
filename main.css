@@ -46,47 +46,56 @@ border-radius: 15px;
 h3{
   text-align: center;
   }
+/* ###################################################################################################### */
 
-  h2{
+.container{
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.container h3{
     text-align: center;
-    box-shadow: grey 5px 5px 5px;
     flex: 1;
-    width: 50%;
+    width: auto;
     align-self: center;
-    border-radius: 50px
+  
     
   }
 
-img{
+.container img{
   height:150px;
   width: 300px;
 }
+
 .projects{
   display: flex;
   align-items: center;
   justify-content: space-around;  
   flex-wrap: wrap;
 }
+
 #portfolio{
   position: relative;
-  margin: 10px;
+  box-shadow: grey 10px 10px 10px;
   height: 150px;
   width: 300px;
-  flex:1;
+  align-self: center;
 }
 #expenseApp{
   position: relative;
-  margin: 10px;
+  box-shadow: grey 10px 10px 10px;
   height: 150px;
   width: 300px;
-  flex: 1;
+  align-self: center;
 }
 #clickMusic{
   position: relative;
-  margin: 10px;
+  box-shadow: grey 10px 10px 10px;
   height: 150px;
   width: 300px;
-  flex: 1;
+  align-self: center;
 }
 
 #portfolioInfo {
@@ -143,8 +152,4 @@ img{
 
 body {
   margin: 0;
-}
-.container{
-  display: flex;
-  flex-direction: column;
 }
