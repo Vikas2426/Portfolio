@@ -5,6 +5,7 @@
   /* background-image: linear-gradient(to top, #f7f6e4, #070f16); */
   color: #d7e6e6;
   height: 100vh;
+  width: 100%;
   font-family: monospace;
   display: flex;
   flex-direction: column;
