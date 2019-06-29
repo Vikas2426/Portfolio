@@ -16,7 +16,7 @@ body {
 
 }
 .profile-pic {
-  image-orientation: from-image;
+  transform: rotate(-90deg);
   border-radius: 50%;
   height: 200px;
   width: 200px;
