@@ -29,6 +29,15 @@ body {
     font-size: 2vh;
 
   }
+
+  .profile-pic {
+    transform: rotate(-90deg);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    box-shadow: #292929 5px 10px 10px;
+  }
 }
 
 .site-header {
