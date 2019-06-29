@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 
 .site-header {
   /* background-color:#263137;  */
@@ -14,7 +17,7 @@
 
 }
 .profile-pic {
-  
+  transform: rotate(-90deg);
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -48,6 +51,7 @@ h3{
   }
 /* ###################################################################################################### */
 
+
 .container{
   margin: 0%;
   display: flex;
@@ -71,7 +75,9 @@ h3{
   width: 300px;
 }
 
-.projects{
+/*######################### Web Development Projects #########################################*/
+
+.webProjects{
   display: flex;
   align-items: center;
   justify-content: space-around;  
@@ -153,6 +159,65 @@ h3{
 }
 
 
-body {
-  margin: 0;
+/*######################################### Machine Learning Projects #################################################### */
+
+.MLProjects{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+#creditCardFraud{
+  position: relative;
+  box-shadow: #292939 10px 10px 10px;
+  height: 150px;
+  width: 300px;
+  align-self: center;
+
+}
+
+#creditCardFraudInfo{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+}
+#creditCardFraud:hover #creditCardFraudInfo{
+  visibility: visible;
+  opacity: 1;
+}
+
+#breastCancerDetect{
+  position: relative;
+  box-shadow: #292939 10px 10px 10px;
+  height: 150px;
+  width: 300px;
+  align-self: center;
+}
+
+#breastCancerDetectInfo{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+#breastCancerDetect:hover #breastCancerDetectInfo{
+  visibility: visible;
+  opacity: 1;
+
 }
