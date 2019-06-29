@@ -5,7 +5,7 @@ body {
 
 @media (max-width: 320px){
   .container img{
-    height:75px;
+    height: auto;
     width: width/2 - 10px;
     box-shadow: #292939 10px 10px 10px;
    border: 1px solid #292939;
