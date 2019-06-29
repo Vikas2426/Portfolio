@@ -1,9 +1,9 @@
 
 .site-header {
   /* background-color:#263137;  */
-  background-color: rgb(35, 175, 180);
+  background-color: #292939;
   /* background-image: linear-gradient(to top, #f7f6e4, #070f16); */
-  color: #d7e6e6;
+  color: #f2f2e6;
   height: 60vh;
   width: 100%;
   font-family: monospace;
@@ -19,7 +19,7 @@
   height: 200px;
   width: 200px;
   align-self: center;
-  box-shadow: #313333 5px 10px 10px;
+  box-shadow: #292929 5px 10px 10px;
 }
 h1{
 text-align: center;
@@ -53,6 +53,7 @@ h3{
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
+  background-color: #f2f2e6;
 }
 
 .container h3{
@@ -60,6 +61,7 @@ h3{
     flex: 1;
     width: auto;
     align-self: center;
+    color: #793f5c;
   
     
   }
@@ -79,21 +81,21 @@ h3{
 
 #portfolio{
   position: relative;
-  box-shadow: grey 10px 10px 10px;
+  box-shadow: #292939 10px 10px 10px;
   height: 150px;
   width: 300px;
   align-self: center;
 }
 #expenseApp{
   position: relative;
-  box-shadow: grey 10px 10px 10px;
+  box-shadow:#292939 10px 10px 10px;
   height: 150px;
   width: 300px;
   align-self: center;
 }
 #clickMusic{
   position: relative;
-  box-shadow: grey 10px 10px 10px;
+  box-shadow: #292939 10px 10px 10px;
   height: 150px;
   width: 300px;
   align-self: center;
