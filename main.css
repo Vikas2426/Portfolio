@@ -6,7 +6,7 @@ body {
 @media (max-width: 320px){
   .container img{
     height:75px;
-    width: 150px;
+    width: width/2 - 10px;
     box-shadow: #292939 10px 10px 10px;
    border: 1px solid #292939;
    margin-bottom: 20px;
@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2vh;
 
   }
 }
