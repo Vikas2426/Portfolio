@@ -115,11 +115,11 @@ h3{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'montserrat', sans-serif;
+  font-family: 'Indie Flower', cursive;
 }
 
 .container h3{
-  font-family: 'Indie Flower', cursive;
+  
     text-align: center;
     flex: 1;
     width: auto;
@@ -131,7 +131,7 @@ h3{
   }
 
   .container h5{
-    font-family: 'Indie Flower', cursive;
+    
     text-align: center;
     width: auto;
     align-self: center;
