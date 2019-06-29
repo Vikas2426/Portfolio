@@ -4,11 +4,9 @@ body {
   background-color: #f2f2e6;
 }
 
-@media (max-width: 320px){
-  .container img{
-    width: auto;
-    box-shadow: #292939 10px 10px 10px;
-   border: 1px solid #292939;  
+@media (max-width: 480px){
+  .container>div{
+    flex: 0 50%; 
   }
 }
 
