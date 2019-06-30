@@ -4,14 +4,13 @@
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta name="theme-color" content="#1bbc9b" />
         <link href="main.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script
             defer
             src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
             integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
             crossorigin="anonymous">
          </script>
-
     </head>
     <body>
 
@@ -22,48 +21,65 @@
                 <a id='insta' href="https://www.instagram.com/vikas.choubey/" target="_blank"><img src="images/instagram-logo.png"></a>
                 <a id='github' href="https://www.github.com/vikas2426" target="_blank"><img src="images/github-logo.png"></a>
                 <a id='email' href="mailto:vikas.cby@gmail.com" target="_top"><img src='images/email-logo.png'></a>
-        </div>
-                <h1 style="margin: 5px 0px 2px 0px;">Hi, I am Vikas Choubey, I am 25 years old, living in Delhi, India</h1>
-                <h2 style="margin= 0px;"> I am learning full stack web development.<br> Watch this space for my upcoming projects</h2>
+            </div>
+                <h3 style="margin: 5px 0px 2px 0px;">Hi, I am Vikas Choubey, I am 25 years old, living in Delhi, India</h4>
+                <h4 style="margin= 0px;"> I am learning full stack web development.<br> Watch this space for my upcoming projects</h4>
         </header>
 
 
-        <div class='container'>
-
-            <h3>Web Development Projects</h3>
-
-            <div class="webProjects" >
-                        <div id='portfolio' >
 
 
-                            <a  href='https://vikasresume.netlify.com/' target="_blank">
-                                <h5>Portfolio</h5> <img src="images/portfolio.png" ></a>
-
-                        </div>
-
-                        <div id='expenseApp'>
-                            <a  href='https://vikasexpense.netlify.com/' target="_blank">
-                                <h5>Expense Web App</h5>
-                                <img src="images/expenseApp.png">
-                            </a>
-                        </div>
 
 
-                        <div id='clickMusic'>
-                            <a  href='https://clickmusic.netlify.com/' target="_blank">
-                                <h5>Music on Click Web App</h5>
-                                <img src="images/clickMusic.png">
-                            </a>
-                        </div>
 
-                        <div id='more'>
-
-                                    <h3>More Coming Soon</h3>
-
-                            </div>
+            <h3 style="font-family: 'Indie Flower', cursive;">Web Development Projects</h3>
+        <div class = "container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a  href='https://vikasresume.netlify.com/' target="_blank">
+                  <img class="d-block w-100" src="images/portfolio.png" alt="Second slide"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: #fff; font-family: 'Indie Flower', cursive;">Portfolio</h5>
+                    <p style="color: #fff; font-family: 'Indie Flower', cursive;">Portfolio Website</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a  href='https://vikasexpense.netlify.com/' target="_blank">
+                  <img class="d-block w-100" src="images/expenseApp.png" alt="Second slide"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: #000; font-family: 'Indie Flower', cursive;">Expense App</h5>
+                    <p style="color: #000; font-family: 'Indie Flower', cursive;">Expense Tracking Web App</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a  href='https://clickmusic.netlify.com/' target="_blank">
+                <img class="d-block w-100" src="images/clickMusic.png" alt="Third slide"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: #000; font-family: 'Indie Flower', cursive;">Click Music App</h5>
+                    <p style="color: #000; font-family: 'Indie Flower', cursive;">Click Create Music Web App</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: #000; font-family: 'Indie Flower', cursive;"></span>
+                <span class="sr-only" style="color: #000; font-family: 'Indie Flower', cursive;">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="color: #000"></span>
+                <span class="sr-only" style="color: #000">Next</span>
+              </a>
             </div>
 
-            <h3>Machine Learning Projects</h3>
+        </div>
+
+
+            <!-- <h3>Machine Learning Project  <h3>Machine Learning Projects</h3>
 
             <div class="MLProjects">
 
@@ -92,9 +108,42 @@
 
                             <h3>More Coming Soon</h3>
 
-                    </div>
+                    </div>s</h3>
 
-            </div>
-        </div>
+            <div class="MLProjects">
+
+                <div id="creditCardFraud">
+                    <a href="https://github.com/Vikas2426/Machine-Learning-Projects/blob/master/Credit%20Card%20Fraud%20Detection.ipynb" target="_blank">
+                        <h5>Credit Card Fraud Detection Project</h5>
+                        <img src="images/creditCard.jpg">
+                    </a>
+                </div>
+
+                <div id="breastCancerDetect">
+                        <a href="https://github.com/Vikas2426/Machine-Learning-Projects/blob/master/Breast%20Cancer.ipynb" target="_blank">
+                            <h5> Breast Cancer Detection Project</h5>
+                            <img src="images/breastCancer.jpg">
+                        </a>
+                </div>
+
+                <div id="ixxo">
+                        <a href="https://github.com/Vikas2426/Internship" target="_blank">
+                            <h5> ML Internship at Lambda Vision</h5>
+                            <img src="images/ixxo.jpg">
+                        </a>
+                </div>
+
+                <div id='more'>
+
+                            <h3>More Coming Soon</h3>
+
+                    </div> -->
+
+            <!-- </div>
+        </div> -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
