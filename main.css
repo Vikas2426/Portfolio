@@ -70,72 +70,38 @@ h3{
 
 
 .container{
-  width: 30vw;
-  height: auto;
+
   display: flex;
   justify-content: center;
   align-items:center;
   font-family: 'Indie Flower', cursive;
   color: #292939;
+  margin: 3% 0%;
   /* background: #79e0e7 url("images/back5.jpg") */
 
 }
 
 
-.container h3{
-  display: flex;
-  flex: 1;
-    text-align: center;
-    width: auto;
-    align-self: center;
-    color: #fff;
-    font-size: 25;
-    margin: 2px 0px;
-    text-decoration-line: underline;
-    font-family: 'Indie Flower', cursive;
-  }
-
-/*
-.container h5{
-
-    color: #000;
+.container img{
+  width: 30vw;
+  height: auto;
 }
 
-.container p{
-    color: #000;
-} */
-/* .container img{
-  height:50vh;
-  width: 40vw;
- border: 1px solid #292939;
- margin: 2px 0px;
-} */
 
-.container img:hover{
-  border-radius: 15px;
-  transform: scale(1.1);
-  box-shadow: #ffffff 5px 10px 10px;
-  opacity: .9;
+.Web{
 
-}
-
-/*######################### Web Development Projects #########################################*/
-
-a{
-  text-decoration-line: blink;
-
-}
-
-.webProjects{
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 5px 0px;
-
-
- text-align: center;
 }
+
+
+
+/*######################### Web Development Projects #########################################*/
+
+
 
 
 
@@ -145,10 +111,6 @@ a{
 .MLProjects{
 
   display: flex;
-  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 5px 0px;
-
-    text-align: center;
 }
