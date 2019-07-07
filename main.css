@@ -105,11 +105,16 @@ font-weight: lighter;
   margin: 5px 7px 0px 0px;
   text-align: center;
 }
-
+#container{
+  background-image: url(images/back1.jpg);
+  filter: blur(0.5);
+}
 .projects{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
+}
+.projects .card{
+  margin: 5px 5px;
 }
