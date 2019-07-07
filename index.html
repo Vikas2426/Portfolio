@@ -1,34 +1,88 @@
 <html>
-    <head>
-        <title>Vikas Choubey</title>
-        <link href="main.css" rel="stylesheet">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-    </head>
-    <body>
-      <div class='bg-img'></div>
-        <header id="site-header">
-          <img id='profile-pic' src="images/profile-pic.jpg">
-          <h1 id='name'>Vikas Choubey</h1>
-          <h3 id='intro'>Hi, welcome to my portfolio. I am a software engineer with masters in Computer Science and Engineering. This website has links to all my projects and internship below.</h3>
-          <div class="links">
-            <p>Checkout my profiles</p>
-              <a id='linkedin'href="https://www.linkedin.com/in/vikas-choubey/" target="_blank"><img id='linkedin-icon' src="images/linkedin-logo.png"></a>
-              <a id='insta' href="https://www.instagram.com/vikas.choubey/" target="_blank"><img src="images/instagram-logo.png"></a>
-              <a id='github' href="https://www.github.com/vikas2426" target="_blank"><img id='github-icon' src="images/github-logo.png" ></a>
-              <a id='email' href="mailto:vikas.cby@gmail.com" target="_top"><img src='images/email-logo.png'></a>
+  <head>
+    <title>Vikas Choubey</title>
+    <link href="main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  <body>
+    <div class="bg-img"></div>
+    <header id="site-header">
+      <img id="profile-pic" src="images/profile-pic.jpg" />
+      <h1 id="name">Vikas Choubey</h1>
+      <h3 id="intro">
+        Hi, welcome to my portfolio. I am a software engineer with masters in
+        Computer Science and Engineering. This website has links to all my
+        projects and internship below.
+      </h3>
+      <div class="links">
+        <p>Checkout my profiles</p>
+        <a
+          id="linkedin"
+          href="https://www.linkedin.com/in/vikas-choubey/"
+          target="_blank"
+          ><img id="linkedin-icon" src="images/linkedin-logo.png"
+        /></a>
+        <a
+          id="insta"
+          href="https://www.instagram.com/vikas.choubey/"
+          target="_blank"
+          ><img src="images/instagram-logo.png"
+        /></a>
+        <a id="github" href="https://www.github.com/vikas2426" target="_blank"
+          ><img id="github-icon" src="images/github-logo.png"
+        /></a>
+        <a id="email" href="mailto:vikas.cby@gmail.com" target="_top"
+          ><img src="images/email-logo.png"
+        /></a>
+      </div>
+      <div id="contact">
+        <strong id="email-add">
+          <i class="fa fa-envelope" aria-hidden="true"></i
+          >vikas.cby@gmail.com</strong
+        >
+      </div>
+    </header>
+    <div id='container'>
+      <div class='projects'>
+          <div class="card" style="width: 18rem; box-shadow: 0px 0px 10px grey;">
+            <img src="images/portfolio" class="card-img-top" alt="..." style=' height: 180px;' >
+            <div class="card-body">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text">My portfolio website built in HTML5, CSS and Bootstrap.</p>
+              <a href="https://vikasresume.netlify.com" class="btn btn-primary" target="_blank">Visit</a>
+            </div>
           </div>
-          <div id='contact'>
-            <strong id='email-add'>  <i class="fa fa-envelope" aria-hidden="true"></i>vikas.cby@gmail.com</strong>
+          <div class="card" style="width: 18rem; box-shadow: 0px 0px 10px grey;">
+            <img src="images/expense" class="card-img-top" alt="..." style=' height: 180px;' >
+            <div class="card-body">
+              <h5 class="card-title">Expense App</h5>
+              <p class="card-text">My expense app built in HTML5, CSS, Javascript and Bootstrap.</p>
+              <a href="https://vikasexpense.netlify.com" class="btn btn-primary" target="_blank">Visit</a>
+            </div>
           </div>
-        </header>
+          <div class="card" style="width: 18rem; box-shadow: 0px 0px 10px grey;">
+            <img src="images/clickmusic" class="card-img-top" alt="..."  style=' height: 180px;'>
+            <div class="card-body">
+              <h5 class="card-title">Click Music</h5>
+              <p class="card-text">My click music website built in HTML5, CSS and Javascript.</p>
+              <a href="https://clickmusic.netlify.com/" class="btn btn-primary" target="_blank">Visit</a>
+            </div>
+          </div>
+      </div>
+      <div class='projects'>
 
+      </div>
+    </div>
 
-
-        <script
-            defer
-            src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-            integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-            crossorigin="anonymous">
-         </script>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
