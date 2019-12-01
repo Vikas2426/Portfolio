@@ -11,11 +11,19 @@
 
 @media (max-width: 480px) {
   #intro {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
-    margin: 0px 15px;
+    padding: 0px 15px;
+  }
+
+  .project-name {
+    font-size: 0.5rem;
+  }
+
+  .project-caption {
+    font-size: 0.5rem;
   }
 }
 
@@ -139,11 +147,11 @@ a {
 }
 
 .project-name {
-  font-size: 1em;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
 .project-caption {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: normal;
 }
