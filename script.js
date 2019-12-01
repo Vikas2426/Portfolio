@@ -42,7 +42,7 @@ const projectContainer = document.querySelector(".projects");
 for (let i = 0; i < myProjects.links.length; i++) {
   projectDiv += ` <div class="card">
     <a href = ${myProjects.links[i]} target="_blank">
-    <img class="project-image" src= '${myProjects.images[i]}' width="300rem" height="150rem" />
+    <img class="project-image" src= '${myProjects.images[i]}' width="100%" height="50%" />
   <h4 class="project-name">${myProjects.names[i]}</h4>
   <h4 class="project-caption">${myProjects.tech[i]}</h4></a>
 </div> 

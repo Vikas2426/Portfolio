@@ -106,22 +106,23 @@ hr {
   filter: blur(0.5);
 }
 .projects {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-flow: row wrap;
 }
 
 .card {
   text-align: center;
   box-shadow: 0px 0px 30px grey;
-  width: 25em;
-  height: 22em;
-  margin: 0.5rem;
-  padding: 0.5%;
+  width: 20%;
+  height: 40%;
+  margin: 0.5%;
+  padding: 0.3%;
   background-color: white;
+  border-radius: 2%;
 }
 
 .card:hover {
@@ -134,15 +135,15 @@ a {
 }
 
 .project-image {
-  border: 0.02rem solid grey;
+  border: 2% solid grey;
 }
 
 .project-name {
-  font-size: 1.3rem;
+  font-size: 1em;
   text-decoration: underline;
 }
 
 .project-caption {
-  font-size: 1.2rem;
+  font-size: 1em;
   font-weight: normal;
 }
