@@ -17,6 +17,10 @@
     font-weight: lighter;
     padding: 0px 15px;
   }
+  .card {
+    width: 40%;
+    height: 45%;
+  }
 }
 
 body {
