@@ -44,7 +44,8 @@ for (let i = 0; i < myProjects.links.length; i++) {
     <a href = ${myProjects.links[i]} target="_blank">
     <img class="project-image" src= '${myProjects.images[i]}' width="100%" height="50%" />
   <h4 class="project-name">${myProjects.names[i]}</h4>
-  <h4 class="project-caption">${myProjects.tech[i]}</h4></a>
+  <div class="caption">
+  <p class="project-caption">${myProjects.tech[i]}</p></div></a>
 </div> 
   `;
 }

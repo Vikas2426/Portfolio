@@ -17,14 +17,6 @@
     font-weight: lighter;
     padding: 0px 15px;
   }
-
-  .project-name {
-    font-size: 0.2rem;
-  }
-
-  .project-caption {
-    font-size: 0.2rem;
-  }
 }
 
 body {
@@ -124,26 +116,28 @@ hr {
 
 .card {
   text-align: center;
-  box-shadow: 0px 0px 30px grey;
+  box-shadow: 0px 0px 10px grey;
   width: 20%;
-  height: 40%;
-  margin: 0.5%;
-  padding: 0.3%;
+  height: 45%;
+  /* margin: 0.5%; */
+  padding: 0.5%;
   background-color: white;
   border-radius: 2%;
 }
 
 .card:hover {
   transform: scale(1.04);
-  box-shadow: 0px 0px 40px grey;
+  box-shadow: 0px 0px 15px grey;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
 
 .project-image {
-  border: 2% solid grey;
+  width: 100%;
+  height: 40%;
 }
 
 .project-name {
@@ -151,7 +145,10 @@ a {
   text-decoration: underline;
 }
 
+.caption {
+  height: 40%;
+}
 .project-caption {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: normal;
 }
