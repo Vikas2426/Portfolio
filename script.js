@@ -3,7 +3,7 @@ var myProjects = {
     "Portfolio",
     "Expense App",
     "Click Music",
-    "Data Scientist @ Lambda Vision",
+    "Data Scientist @ IXXO",
     "ML Projects",
     "Dinosaur Game Player"
   ],
