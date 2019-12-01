@@ -1,46 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
 
-@media (min-width: 760px){
-
-  #intro{
-  width: 700px;
-  height: auto;
-  font-size: 25px;
-  font-weight: lighter;
+@media (min-width: 760px) {
+  #intro {
+    width: 700px;
+    height: auto;
+    font-size: 25px;
+    font-weight: lighter;
   }
 }
 
-@media (max-width: 480px){
-
-  #intro{
-  width: 100%;
-  height: auto;
-  font-size: 25px;
-  font-weight: lighter;
-  margin: 0px 15px;
+@media (max-width: 480px) {
+  #intro {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0px 15px;
+  }
 }
 
-
-}
-
-body{
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Courgette', cursive;
-  background-color: rgb(220,220,220);
-
+  font-family: "Courgette", cursive;
+  background-color: white;
 }
-.bg-img{
+.bg-img {
   width: 100%;
   height: 100vh;
-  background: url(images/back8.jpg) no-repeat ;
+  background: url(images/back8.jpg) no-repeat;
   background-size: cover;
   filter: blur(5px);
   z-index: -2;
-
 }
 
-#site-header{
+#site-header {
   margin-top: 50px;
   width: 100%;
   height: 100%;
@@ -52,38 +46,34 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-
-
 }
 
-#profile-pic{
+#profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   box-shadow: 0px 0px 40px white;
 }
 
-#name{
+#name {
   font-size: 50px;
   font-weight: 300;
   height: auto;
   margin: 5px 5px;
   z-index: 100;
-
 }
 
-
-
-#intro{
-font-size: 20px;
-font-weight: lighter;
+#intro {
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 1em;
 }
 
-.links{
+.links {
   text-align: center;
 }
 
-.links a img{
+.links a img {
   width: 40px;
   height: auto;
   margin: 0px 10px 10px 0px;
@@ -92,37 +82,67 @@ font-weight: lighter;
   box-shadow: 0px 0px 20px #bdc3c7;
 }
 
-.links a img:hover{
+.links a img:hover {
   transform: scale(1.2);
   box-shadow: 0px 0px 20px #fff;
 }
 
-#github-icon,  #linkedin-icon{
+#github-icon,
+#linkedin-icon {
   background-color: white;
 }
 
-#phone, #email-add{
+#phone,
+#email-add {
   margin: 5px 7px 0px 0px;
   text-align: center;
 }
-#container{
+
+hr {
+  border: 0.2em solid black;
+}
+#container {
   /* background-image: url(images/back1.jpg); */
   filter: blur(0.5);
 }
-.projects{
-  display: flex;
+.projects {
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-}
-.projects .card{
-  margin: 5px 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.card{
-  box-shadow: 0px 0px 20px grey;
-  width: 18rem;
+.card {
+  text-align: center;
+  box-shadow: 0px 0px 30px grey;
+  width: 25em;
+  height: 22em;
+  margin: 0.5rem;
+  padding: 0.5%;
+  background-color: white;
 }
-i{
-  margin: 2px 5px;
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 0px 40px grey;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-image {
+  border: 0.02rem solid grey;
+}
+
+.project-name {
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+.project-caption {
+  font-size: 1.2rem;
+  font-weight: normal;
 }
