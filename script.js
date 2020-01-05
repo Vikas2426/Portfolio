@@ -5,7 +5,8 @@ var myProjects = {
     "Click Music",
     "Data Scientist @ IXXO",
     "ML Projects",
-    "Dinosaur Game Player"
+    "Dinosaur Game Player",
+    "Gradient Generator"
   ],
 
   links: [
@@ -14,7 +15,8 @@ var myProjects = {
     "https://clickmusic.netlify.com/",
     "https://github.com/Vikas2426/Internship",
     "https://github.com/Vikas2426/Machine-Learning-Projects",
-    "https://github.com/Vikas2426/Python-Programs/blob/master/DinosaurBot.ipynb"
+    "https://github.com/Vikas2426/Python-Programs/blob/master/DinosaurBot.ipynb",
+    "https://github.com/Vikas2426/background_generator"
   ],
 
   images: [
@@ -23,7 +25,8 @@ var myProjects = {
     "images/clickmusic",
     "images/ixxo.jpeg",
     "images/ml.jpg",
-    "images/dino.jpg"
+    "images/dino.jpg",
+    "images/background.png"
   ],
 
   tech: [
@@ -32,7 +35,8 @@ var myProjects = {
     "HTML5, CSS and Javascript.",
     "Internship project. Logistic Regression for classification.",
     "Machine learning projects. Github Repository.",
-    "Game bot to play the google offline dinosaur game."
+    "Game bot to play the google offline dinosaur game.",
+    "Generate linear gradients, copy code and use it in your own webpage"
   ]
 };
 
