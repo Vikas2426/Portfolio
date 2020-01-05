@@ -1,4 +1,4 @@
-var myProjects = {
+const myProjects = {
   names: [
     "Portfolio",
     "Expense App",
@@ -16,7 +16,7 @@ var myProjects = {
     "https://github.com/Vikas2426/Internship",
     "https://github.com/Vikas2426/Machine-Learning-Projects",
     "https://github.com/Vikas2426/Python-Programs/blob/master/DinosaurBot.ipynb",
-    "https://gradientgenerator.netlify.com"
+    "https://github.com/Vikas2426/background_generator"
   ],
 
   images: [
@@ -38,30 +38,4 @@ var myProjects = {
     "Game bot to play the google offline dinosaur game.",
     "Generate linear gradients, copy code and use it in your own webpage"
   ]
-};
-
-var projectDiv = "";
-const projectContainer = document.querySelector(".projects");
-
-for (let i = 0; i < myProjects.links.length; i++) {
-  projectDiv += ` <div class="card">
-    <a href = ${myProjects.links[i]} target="_blank">
-    <img class="project-image" src= '${myProjects.images[i]}' width="100%" height="50%" />
-  <h4 class="project-name">${myProjects.names[i]}</h4>
-  <div class="caption">
-  <p class="project-caption">${myProjects.tech[i]}</p></div></a>
-</div> 
-  `;
-}
-
-// const projectContainer = document.querySelector(".projects");
-projectContainer.innerHTML = projectDiv;
-// console.log(projectDiv);
-{
-  /* <div>
-    <img src= '${myProjects.images[i]}' width="10px" />
-    <h5>${myProjects.names[i]}</h5>
-    <p>${myProjects.captions[i]}</p>
-    <a href = ${myProjects.links[i]}>Visit</a>
-</div>  */
 }
