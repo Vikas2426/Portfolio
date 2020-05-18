@@ -164,8 +164,10 @@ a {
     text-justify: center;
   }
 }
+
 @media (min-width: 481px) and (max-width: 759px) {
   #site-header {
+    width: 100vw;
     margin-top: 20px;
     justify-content: start;
     padding-top: 10vh;
@@ -213,6 +215,7 @@ a {
 
 @media (max-width: 480px) {
   #site-header {
+    width: 100vw;
     margin-top: 20px;
     justify-content: start;
     padding-top: 10vh;
@@ -240,8 +243,8 @@ a {
     padding: 0% 15%;
   }
   .links a img {
-    margin-top: 10vh;
-    width: 5vw;
+    margin-top: 3vh;
+    width: 15vw;
   }
 
   textarea {
