@@ -6,7 +6,7 @@ var myProjects = {
     "Data Scientist @ IXXO",
     "ML Projects",
     "Dinosaur Game Player",
-    "Gradient Generator"
+    "Gradient Generator",
   ],
 
   links: [
@@ -16,7 +16,7 @@ var myProjects = {
     "https://github.com/Vikas2426/Internship",
     "https://github.com/Vikas2426/Machine-Learning-Projects",
     "https://github.com/Vikas2426/Python-Programs/blob/master/DinosaurBot.ipynb",
-    "https://gradientgenerator.netlify.com"
+    "https://gradientgenerator.netlify.com",
   ],
 
   images: [
@@ -26,7 +26,7 @@ var myProjects = {
     "images/ixxo.jpeg",
     "images/ml.jpg",
     "images/dino.jpg",
-    "images/background.png"
+    "images/background.png",
   ],
 
   tech: [
@@ -36,12 +36,18 @@ var myProjects = {
     "Internship project. Logistic Regression for classification.",
     "Machine learning projects. Github Repository.",
     "Game bot to play the google offline dinosaur game.",
-    "Generate linear gradients, copy code and use it in your own webpage"
-  ]
+    "Generate linear gradients, copy code and use it in your own webpage",
+  ],
 };
-
-var projectDiv = "";
+const copy = document.querySelector("#copy-icon");
+const emailId = document.querySelector("#email-id");
 const projectContainer = document.querySelector(".projects");
+
+copy.addEventListener("click", () => {
+  emailId.select();
+  document.execCommand("copy");
+});
+var projectDiv = "";
 
 for (let i = 0; i < myProjects.links.length; i++) {
   projectDiv += ` <div class="card">

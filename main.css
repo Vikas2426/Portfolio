@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Courgette", cursive;
+  font-family: "Montserrat", sans-serif;
   background-color: white;
 }
 .bg-img {
-  width: 97.8vw;
+  width: 99vw;
   height: 100vh;
   background: url(images/back8.jpg) no-repeat;
   background-size: cover;
@@ -49,7 +48,8 @@ body {
 #intro {
   font-size: 1.5em;
   font-weight: lighter;
-  padding: 1em;
+  margin: 1vh;
+  color: #fff;
 }
 
 .links {
@@ -79,6 +79,24 @@ body {
 #email-add {
   margin: 5px 7px 0px 0px;
   text-align: center;
+}
+
+#contact {
+  font-size: 1.5em;
+}
+
+textarea {
+  font-size: 1em;
+  resize: none;
+  outline: none;
+  text-align: center;
+  color: #eee;
+  background-color: #112;
+  border: 0;
+}
+#copy-icon:hover {
+  font-size: larger;
+  cursor: pointer;
 }
 
 /* hr {
@@ -139,7 +157,7 @@ a {
 
 @media (min-width: 760px) {
   #intro {
-    width: 70vw;
+    width: 50vw;
     height: auto;
     font-size: 1.5em;
     font-weight: lighter;
