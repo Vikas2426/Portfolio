@@ -33,7 +33,7 @@ var myProjects = {
     "HTML5, CSS and Bootstrap.",
     "HTML5, CSS, Javascript and Bootstrap.",
     "HTML5, CSS and Javascript.",
-    "Internship project. Logistic Regression for classification.",
+    "Internship project. Logistic Regression",
     "Machine learning projects. Github Repository.",
     "Game bot to play the google offline dinosaur game.",
     "Generate linear gradients",
