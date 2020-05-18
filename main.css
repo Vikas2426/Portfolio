@@ -164,8 +164,13 @@ a {
     text-justify: center;
   }
 }
+@media (min-width: 481px) and (max-width: 759px) {
+  #site-header {
+    margin-top: 20px;
+    justify-content: start;
+    padding-top: 10vh;
+  }
 
-@media (max-width: 480px) {
   #name {
     font-size: 2em;
     font-weight: bold;
@@ -176,13 +181,91 @@ a {
 
   #intro {
     width: 90vw;
+    font-size: 1.2em;
+    font-weight: lighter;
+    padding: 0% 10%;
+  }
+
+  .links a img {
+    margin-top: 3vh;
+    width: 30px;
+  }
+
+  textarea {
     font-size: 1em;
+  }
+
+  .card {
+    margin-top: 4vh;
+    width: 40vw;
+    height: 40%;
+    font-size: 0.8em;
+  }
+
+  .project-name {
+    font-size: 1rem;
+  }
+  .caption {
+    margin: 2vh 1vh;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #site-header {
+    margin-top: 20px;
+    justify-content: start;
+    padding-top: 10vh;
+  }
+
+  #profile-pic {
+    width: 30vw;
+    height: 20vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px white;
+  }
+
+  #name {
+    font-size: 1.5em;
+    font-weight: bold;
+    height: auto;
+    margin: 5px 5px;
+    z-index: 100;
+  }
+
+  #intro {
+    width: 90vw;
+    font-size: 0.7em;
     font-weight: lighter;
     padding: 0% 15%;
   }
+  .links a img {
+    margin-top: 3vh;
+    width: 30px;
+  }
+
+  textarea {
+    padding: 1vh;
+    font-size: 0.8em;
+  }
+
+  #copy-icon {
+    font-size: large;
+    cursor: pointer;
+  }
+
   .card {
-    width: 40vw;
-    height: 45%;
-    font-size: 1em;
+    margin-top: 3vh;
+    width: 70vw;
+    height: 40%;
+    font-size: 0.5em;
+  }
+
+  .project-name {
+    font-size: 1rem;
+  }
+  .caption {
+    margin: 2vh 1vh;
+    padding: 0;
   }
 }

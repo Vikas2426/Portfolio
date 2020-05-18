@@ -30,7 +30,7 @@ var myProjects = {
   ],
 
   tech: [
-    "HTML5, CSS and Bootstrap.",
+    "HTML5, CSS, Javascript and Bootstrap.",
     "HTML5, CSS, Javascript and Bootstrap.",
     "HTML5, CSS and Javascript.",
     "Internship project. Logistic Regression",
