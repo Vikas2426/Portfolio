@@ -229,19 +229,19 @@ a {
     font-size: 1.5em;
     font-weight: bold;
     height: auto;
-    margin: 5px 5px;
+    margin: 10px 5px;
     z-index: 100;
   }
 
   #intro {
     width: 90vw;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: lighter;
     padding: 0% 15%;
   }
   .links a img {
     margin-top: 3vh;
-    width: 30px;
+    width: 5vw;
   }
 
   textarea {
@@ -258,7 +258,7 @@ a {
     margin-top: 3vh;
     width: 70vw;
     height: 40%;
-    font-size: 0.5em;
+    font-size: 1em;
   }
 
   .project-name {
