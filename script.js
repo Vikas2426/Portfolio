@@ -36,7 +36,7 @@ var myProjects = {
     "Internship project. Logistic Regression for classification.",
     "Machine learning projects. Github Repository.",
     "Game bot to play the google offline dinosaur game.",
-    "Generate linear gradients, copy code and use it in your own webpage",
+    "Generate linear gradients",
   ],
 };
 const copy = document.querySelector("#copy-icon");
