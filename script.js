@@ -60,14 +60,4 @@ for (let i = 0; i < myProjects.links.length; i++) {
   `;
 }
 
-// const projectContainer = document.querySelector(".projects");
 projectContainer.innerHTML = projectDiv;
-// console.log(projectDiv);
-{
-  /* <div>
-    <img src= '${myProjects.images[i]}' width="10px" />
-    <h5>${myProjects.names[i]}</h5>
-    <p>${myProjects.captions[i]}</p>
-    <a href = ${myProjects.links[i]}>Visit</a>
-</div>  */
-}
