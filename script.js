@@ -1,5 +1,6 @@
 var myProjects = {
   names: [
+    "Resume",
     "Google Keep Clone",
     "ToDo App FullStack",
     "Portfolio",
@@ -12,6 +13,7 @@ var myProjects = {
   ],
 
   links: [
+    "https://vikas-choubey-resume.netlify.app/",
     "https://vikas2426.github.io/GoogleKeepClone-React-App/",
     "https://vikas2426.github.io/ToDo/",
     "https://vikasresume.netlify.com",
@@ -24,6 +26,7 @@ var myProjects = {
   ],
 
   images: [
+    "images/resume.jpg",
     "images/keep.jpg",
     "images/todoApp.jpg",
     "images/portfolio",
@@ -36,6 +39,7 @@ var myProjects = {
   ],
 
   tech: [
+    "Resume.io",
     "REACT, CSS",
     "MongoDB, ExpressJs, REACT, Node (MERN)",
     "HTML5, CSS, Javascript and Bootstrap.",
