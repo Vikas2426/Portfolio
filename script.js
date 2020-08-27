@@ -1,5 +1,7 @@
 var myProjects = {
   names: [
+    "Google Keep Clone",
+    "ToDo App FullStack",
     "Portfolio",
     "Expense App",
     "Click Music",
@@ -10,6 +12,8 @@ var myProjects = {
   ],
 
   links: [
+    "https://vikas2426.github.io/GoogleKeepClone-React-App/",
+    "https://vikas2426.github.io/ToDo/",
     "https://vikasresume.netlify.com",
     "https://vikasexpense.netlify.com",
     "https://clickmusic.netlify.com/",
@@ -20,6 +24,8 @@ var myProjects = {
   ],
 
   images: [
+    "images/keep.jpg",
+    "images/todoApp.jpg",
     "images/portfolio",
     "images/expense",
     "images/clickmusic",
@@ -30,6 +36,8 @@ var myProjects = {
   ],
 
   tech: [
+    "REACT, CSS",
+    "MongoDB, ExpressJs, REACT, Node (MERN)",
     "HTML5, CSS, Javascript and Bootstrap.",
     "HTML5, CSS, Javascript and Bootstrap.",
     "HTML5, CSS and Javascript.",
