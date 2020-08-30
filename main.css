@@ -34,6 +34,21 @@ body {
   text-align: center;
 }
 
+.resume-download {
+  height: 1.2rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1rem;
+}
+
+.resume-download a,
+.resume-download i {
+  margin-top: -5%;
+  color: white;
+  text-shadow: 5px 5px 10px rgb(64, 101, 224);
+}
+
 #profile-pic {
   width: 15%;
   height: 25%;
@@ -100,13 +115,15 @@ a > i {
   font-size: 1.5em;
 }
 
-textarea {
+textarea,
+#copy-icon {
   font-size: 1em;
   resize: none;
   outline: none;
   text-align: center;
   color: #eee;
-  background-color: #112;
+  background-color: transparent;
+  text-shadow: 0px 0px 10px rgb(76, 115, 243);
   border: 0;
 }
 
@@ -121,7 +138,7 @@ section {
 
 .project-type {
   width: 100%;
-  margin: 3px;
+  margin: 2px;
   text-align: center;
 }
 
@@ -254,6 +271,11 @@ a > h4 {
     margin: 2vh 1vh;
     padding: 0;
   }
+}
+
+Footer {
+  text-align: center;
+  color: #aaa;
 }
 
 @media (max-width: 480px) {

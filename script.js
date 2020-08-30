@@ -90,6 +90,7 @@ const emailId = document.querySelector("#email-id");
 const mernProjectContainer = document.querySelector(".mern-projects");
 const vanillaProjectContainer = document.querySelector(".vanilla-projects");
 const otherProjectContainer = document.querySelector(".other-projects");
+const footer = document.querySelector("Footer");
 
 
 copy.addEventListener("click", () => {
@@ -147,3 +148,6 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
 }
 
 otherProjectContainer.innerHTML = otherProjectDiv;
+
+const year = new Date().getFullYear();
+footer.innerText = `Copyright © Vikas Choubey, ${year}`;
