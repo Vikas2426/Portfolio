@@ -14,10 +14,10 @@ var mernProjectList = {
   ],
 
   images: [
-    "images/resume.jpg",
-    "images/amazon-clone.jpg",
-    "images/keep.jpg",
-    "images/todoApp.jpg",
+    "images/resume-min.jpg",
+    "images/amazon-clone-min.jpg",
+    "images/keep-min.jpg",
+    "images/todoApp-min.jpg",
   ],
 
   tech: [
@@ -72,9 +72,9 @@ var otherProjectList = {
   ],
 
   images: [
-    "images/ixxo.jpeg",
-    "images/ml.jpg",
-    "images/dino.jpg",
+    "images/ixxo-min.jpeg",
+    "images/ml-min.jpg",
+    "images/dino-min.jpg",
 
   ],
 
