@@ -9,10 +9,12 @@ body {
   overflow-x: hidden;
   background-color: #fff;
 }
+
 .bg-img {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to top, #444, #000);
+  background-color: rgba(0, 0, 0, 0.877);
+  background-image: url(images/background-img-min.png);
   background-size: cover;
   z-index: -2;
 }
@@ -44,14 +46,11 @@ body {
 .resume-download i {
   margin-top: -5%;
   color: white;
-  text-shadow: 5px 5px 10px rgb(64, 101, 224);
 }
 
 #profile-pic {
-  width: 15%;
-  height: 25%;
+  height: 35vh;
   border-radius: 50%;
-  box-shadow: 0px 0px 40px white;
 }
 
 #name {
@@ -73,24 +72,14 @@ body {
   justify-content: center;
 }
 
+#intro-hr {
+  width: 100vw;
+  color: #fff;
+}
+
 .links {
   text-align: center;
   color: white;
-}
-
-.links a img {
-  width: 40px;
-  height: auto;
-  margin: 0px 10px 10px 0px;
-  transition: 0.3ms;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px #bdc3c7;
-  transition: transform 1s;
-}
-
-.links a img:hover {
-  transform: scale(1.2);
-  box-shadow: 0px 0px 20px #fff;
 }
 
 #github-icon,
@@ -106,7 +95,11 @@ body {
 a > i {
   font-size: 2em;
   color: white;
-  margin: 20px 10px;
+  margin: 10px 10px;
+}
+
+a > i:hover {
+  text-shadow: 0px 0px 15px #777;
 }
 
 #contact {
@@ -121,12 +114,11 @@ textarea,
   text-align: center;
   color: #eee;
   background-color: transparent;
-  text-shadow: 0px 0px 10px rgb(76, 115, 243);
   border: 0;
 }
 
 #copy-icon:hover {
-  font-size: larger;
+  text-shadow: 0px 0px 15px #777;
   cursor: pointer;
 }
 
@@ -160,7 +152,7 @@ h3 {
 
 .card {
   text-align: center;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 20px rgb(97, 97, 97);
   width: 18vw;
   height: 45vh;
   padding: 0.5%;
@@ -208,6 +200,11 @@ a > h4 {
   color: blue;
   margin: -5px;
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: rgb(100, 100, 100);
 }
 
 @media (min-width: 760px) {
@@ -274,11 +271,6 @@ a > h4 {
     margin: 2vh 1vh;
     padding: 0;
   }
-}
-
-Footer {
-  text-align: center;
-  color: #aaa;
 }
 
 @media (max-width: 480px) {

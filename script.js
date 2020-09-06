@@ -46,7 +46,7 @@ var vanillaProjectList = {
     "images/portfolio",
     "images/expense",
     "images/clickmusic",
-    "images/background.png",
+    "images/gradient.png",
   ],
 
   tech: [
