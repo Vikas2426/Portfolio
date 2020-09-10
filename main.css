@@ -4,7 +4,6 @@ body {
   padding: 0;
   border: 0;
   font-family: "Montserrat", sans-serif;
-  /* background-color: white; */
   width: 100vw;
   overflow-x: hidden;
   background-color: #fff;
@@ -184,12 +183,12 @@ a > h4 {
 .project-name {
   font-size: 1.2rem;
   text-decoration: underline;
-  color: darkslategrey;
+  color: rgb(75, 78, 78);
 }
 
 .caption {
   height: 12%;
-  color: #444;
+  color: rgb(75, 78, 78);
 }
 .project-caption {
   font-size: 1em;
@@ -316,5 +315,25 @@ footer {
 
   .card {
     width: 70vw;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  section {
+    background-color: rgb(75, 78, 78);
+    color: white;
+  }
+
+  .card {
+    background-color: rgb(72, 75, 75);
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+  }
+  .project-name {
+    color: #ddd;
+  }
+
+  .caption {
+    color: #ddd;
   }
 }
