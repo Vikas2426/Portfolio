@@ -203,7 +203,10 @@ a > h4 {
 
 footer {
   text-align: center;
-  color: rgb(100, 100, 100);
+  color: white;
+  background-color: #252934;
+  height: 5vh;
+  padding-top: 1%;
 }
 
 @media (min-width: 760px) {
@@ -230,7 +233,7 @@ footer {
   }
   #name {
     font-size: 2em;
-    font-weight: bold;
+
     height: auto;
     margin: 5px 5px;
     z-index: 100;

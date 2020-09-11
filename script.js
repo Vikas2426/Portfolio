@@ -43,9 +43,9 @@ var vanillaProjectList = {
   ],
 
   images: [
-    "images/portfolio",
-    "images/expense",
-    "images/clickmusic",
+    "images/portfolio-min.jpeg",
+    "images/expense-min.jpeg",
+    "images/clickmusic-min.jpeg",
     "images/gradient.png",
   ],
 
