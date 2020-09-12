@@ -90,7 +90,7 @@ const emailId = document.querySelector("#email-id");
 const mernProjectContainer = document.querySelector(".mern-projects");
 const vanillaProjectContainer = document.querySelector(".vanilla-projects");
 const otherProjectContainer = document.querySelector(".other-projects");
-const footer = document.querySelector("Footer");
+const footer = document.querySelector("#footer");
 
 
 copy.addEventListener("click", () => {
@@ -105,12 +105,14 @@ for (let i = 0; i < mernProjectList.links.length; i++) {
   mernProjectDiv += `       
   <div class="card">  
     <a href = ${mernProjectList.links[i]} target="_blank">    
-      <img class="project-image" src= '${mernProjectList.images[i]}' width="100%" height="50%" />  
-      <h4 class="project-name">${mernProjectList.names[i]}</h4>  
-      <div class="caption">   
-        <p class="project-caption">${mernProjectList.tech[i]}</p>
+      <div class="project-image-container">
+        <img class="project-image" src= '${mernProjectList.images[i]}' width="100%" height="50%" />  
       </div>
-      <h4 class="visit">Visit</h4>
+      <div class="project-info-container">
+        <h4 class="project-name">${mernProjectList.names[i]}</h4>  
+        <p class="project-caption">${mernProjectList.tech[i]}</p>
+        <button class="visit-link">VISIT</button>
+      </div>
     </a>   
   </div> `;
 }
@@ -121,12 +123,14 @@ for (let i = 0; i < vanillaProjectList.links.length; i++) {
   vanillaProjectDiv += `         
   <div class="card">
     <a href = ${vanillaProjectList.links[i]} target="_blank">
-      <img class="project-image" src= '${vanillaProjectList.images[i]}' width="100%" height="50%" />
-      <h4 class="project-name">${vanillaProjectList.names[i]}</h4>
-      <div class="caption">
-        <p class="project-caption">${vanillaProjectList.tech[i]}</p>
+    <div class="project-image-container">
+        <img class="project-image" src= '${vanillaProjectList.images[i]}' width="100%" height="50%" />  
       </div>
-      <h4 class="visit">Visit</h4>
+      <div class="project-info-container">
+        <h4 class="project-name">${vanillaProjectList.names[i]}</h4>  
+        <p class="project-caption">${vanillaProjectList.tech[i]}</p>
+        <button class="visit-link">VISIT</button>
+      </div>
     </a>
   </div> `;
 }
@@ -137,12 +141,14 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
   otherProjectDiv += `         
   <div class="card">
     <a href = ${otherProjectList.links[i]} target="_blank">
-      <img class="project-image" src= '${otherProjectList.images[i]}' width="100%" height="50%" />
-      <h4 class="project-name">${otherProjectList.names[i]}</h4>
-      <div class="caption">
-        <p class="project-caption">${otherProjectList.tech[i]}</p>
+    <div class="project-image-container">
+        <img class="project-image" src= '${otherProjectList.images[i]}' width="100%" height="50%" />  
       </div>
-      <h4 class="visit">Visit Github Repo</h4>
+      <div class="project-info-container">
+        <h4 class="project-name">${otherProjectList.names[i]}</h4>  
+        <p class="project-caption">${otherProjectList.tech[i]}</p>
+        <button class="visit-link">GITHUB</button>
+      </div>
     </a>
 </div> `;
 }
@@ -150,4 +156,4 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
 otherProjectContainer.innerHTML = otherProjectDiv;
 
 const year = new Date().getFullYear();
-footer.innerText = `Copyright © Vikas Choubey, ${year}`;
+footer.innerHTML = `<p></p>Copyright © Vikas Choubey, ${year}`;

@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +12,6 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100vw;
   overflow-x: hidden;
-  background-color: #fff;
 }
 
 .bg-img {
@@ -30,7 +35,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center;
 }
 
 .resume-download {
@@ -127,14 +131,20 @@ section {
 
 .project-type {
   width: 100%;
-  margin: 2px;
   text-align: center;
+  margin: 5px 0px 0px 0px;
 }
 
 h3 {
+  font-family: "Audiowide", cursive;
   font-size: 1.5em;
-  padding: 1px;
-  font-weight: 500;
+  padding: 3px;
+  font-weight: 400;
+  margin-top: -0.7%;
+  text-decoration: underline;
+}
+section:first-child {
+  margin-top: 1.5%;
 }
 
 .mern-projects,
@@ -146,72 +156,91 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-content: center;
   justify-items: center;
-  height: 60vh;
+  height: 50vh;
+  margin-top: -2%;
 }
 
 .card {
-  text-align: center;
-  box-shadow: 0px 0px 20px rgb(97, 97, 97);
+  box-shadow: 0px 0px 10px #252934;
   width: 18vw;
-  height: 45vh;
-  padding: 0.5%;
+  height: 38vh;
   background-color: rgb(255, 255, 255);
   border-radius: 2%;
-  transition: transform 0.01s;
+  transition: transform 0.1s;
+  border-radius: 3%;
+  padding: 0.8%;
 }
 
 .card:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
   box-shadow: 0px 0px 15px grey;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #252934d3;
 }
 
-a > h4 {
-  color: rgb(65, 191, 204);
+.project-image-container {
+  width: 100%;
+  height: 45%;
 }
 
 .project-image {
-  width: 100%;
-  height: 45%;
+  height: 100%;
   border-radius: 3% 3% 0% 0%;
 }
 
-.project-name {
-  font-size: 1.2rem;
-  text-decoration: underline;
-  color: rgb(75, 78, 78);
+.project-info-container {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
+  height: 55%;
 }
 
-.caption {
-  height: 12%;
-  color: rgb(75, 78, 78);
+.project-name {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  margin: 4% 0%;
 }
+
 .project-caption {
-  font-size: 1em;
-  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 4%;
+  flex: 1;
+  line-height: 120%;
 }
 
 .visit-link {
-  color: blue;
-  margin: -5px;
   cursor: pointer;
+  /* margin-top: 4%; */
 }
 
-footer {
+button {
+  background-color: #1a76d2;
+  border: none;
+  height: 25%;
+  width: 30%;
+  border-radius: 4px;
+  color: WHITE;
+  font-weight: 800;
+  margin-bottom: 2%;
+  outline: none;
+}
+
+#footer {
   text-align: center;
   color: white;
   background-color: #252934;
-  height: 5vh;
-  padding-top: 1%;
+  margin: -1%;
+  height: 100%;
+  padding: 1%;
 }
 
 @media (min-width: 760px) {
   #intro {
-    width: 90%;
+    width: 90vw;
     height: auto;
     font-size: 1.5em;
     font-weight: lighter;
@@ -229,11 +258,15 @@ footer {
   }
 
   .bg-img {
-    width: 99vw;
+    width: 100vw;
   }
+
+  #profile-pic {
+    height: 25%;
+  }
+
   #name {
     font-size: 2em;
-
     height: auto;
     margin: 5px 5px;
     z-index: 100;
@@ -254,6 +287,7 @@ footer {
   textarea {
     font-size: 1em;
   }
+
   .mern-projects,
   .vanilla-projects,
   .other-projects {
@@ -261,7 +295,7 @@ footer {
     grid-auto-columns: auto;
   }
   .card {
-    margin-top: 4vh;
+    margin-top: 3vh;
     width: 40vw;
     font-size: 0.8em;
   }
@@ -269,24 +303,21 @@ footer {
   .project-name {
     font-size: 1rem;
   }
-  .caption {
-    margin: 2vh 1vh;
-    padding: 0;
-  }
 }
 
 @media (max-width: 480px) {
   #site-header {
-    margin-top: 20px;
+    margin-top: 7%;
     justify-content: start;
     padding-top: 10vh;
   }
+
   .bg-img {
-    height: 85vh;
+    height: 95vh;
   }
 
   #profile-pic {
-    height: 26%;
+    height: 25%;
   }
 
   #name {
@@ -317,26 +348,24 @@ footer {
   }
 
   .card {
-    width: 70vw;
+    width: 65vw;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body,
   section {
-    background-color: rgb(51, 51, 51);
+    /* background-color: rgb(51, 51, 51); */
+    background-color: #212121;
     color: white;
   }
 
   .card {
-    background-color: rgb(72, 75, 75);
-    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+    background-color: rgba(104, 105, 105, 0.082);
+    box-shadow: none;
+    border: 0.5px solid rgba(128, 128, 128, 0.336);
   }
-  .project-name {
-    color: #ddd;
-  }
-
-  .caption {
-    color: #ddd;
+  .project-info-container {
+    color: rgba(249, 250, 255, 0.856);
   }
 }
