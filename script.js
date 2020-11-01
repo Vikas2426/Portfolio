@@ -29,7 +29,6 @@ var mernProjectList = {
 };
 var vanillaProjectList = {
   names: [
-    "Portfolio",
     "Jokes",
     "Expense App",
     "Click Music",
@@ -37,7 +36,7 @@ var vanillaProjectList = {
   ],
 
   links: [
-    "https://vikasresume.netlify.com",
+
     "https://just-kidding.netlify.app/",
     "https://vikasexpense.netlify.com",
     "https://clickmusic.netlify.com/",
@@ -45,7 +44,7 @@ var vanillaProjectList = {
   ],
 
   images: [
-    "images/portfolio-min.jpeg",
+
     "/images/justKidding-min.jpeg",
     "images/expense-min.jpeg",
     "images/clickmusic-min.jpeg",
@@ -53,7 +52,7 @@ var vanillaProjectList = {
   ],
 
   tech: [
-    "HTML5, CSS, Javascript and Bootstrap.",
+
     "HTML5, CSS, Javascript and an API",
     "HTML5, CSS, Javascript and Bootstrap.",
     "HTML5, CSS and Javascript.",
