@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0ecc3c2f59.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
@@ -17,12 +21,15 @@
           Welcome, I'm <span id="highlight-name">Vikas Choubey</span>.<br />
           I'm a full-stack web developer.
         </div>
-        <div class="button page-link"><a href="#">Checkout my work</a></div>
+
+        <a href="#about"
+          ><div class="button page-link">Checkout my work</div></a
+        >
       </div>
     </section>
 
     <nav class="navbar">
-      <img src="./images/logo-min.jpg" alt="logo" />
+      <img id="logo" src="./images/logo-min.jpg" alt="logo" />
       <div class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -32,17 +39,104 @@
         <ul>
           <li><a href="#landing">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="">Portfolio</a></li>
+          <li><a href="#projects">Portfolio</a></li>
           <li>
-            <a href="https://vikasjs-blog.netlify.app" target="_blank">Blog</a>
+            <a href="#blog" target="_blank">Blog</a>
           </li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-<section id="about">
-  
-</section>
+    <section id="about">
+      <section id="about-websites">
+        <div class="feature-container">
+          <i class="fa fa-rocket" aria-hidden="true"></i>
+          <h2 class="feature-name">Fast</h2>
+          <p class="feature-desc">Fast loading, lag-free websites</p>
+        </div>
+        <div class="feature-container">
+          <i class="fa fa-window-restore" aria-hidden="true"></i>
+          <h2 class="feature-name">Responsive</h2>
+          <p class="feature-desc">Wesbites beautiful on all screen sizes</p>
+        </div>
+        <div class="feature-container">
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          <h2 class="feature-name">Intuitive</h2>
+          <p class="feature-desc">Easy to understand and use UX/UI</p>
+        </div>
+        <div class="feature-container">
+          <i class="fa fa-server" aria-hidden="true"></i>
+          <h2 class="feature-name">Dynamic</h2>
+          <p class="feature-desc">
+            Dynamic and static websites, as per your requirement
+          </p>
+        </div>
+      </section>
+      <section id="about-me">
+        <img
+          id="profile-pic"
+          src="./images/IMG_0924.JPG"
+          alt="profile picture"
+        />
+        <div class="description">
+          <p>
+            I am a MERN stack developer.<br />
+            Currently situated in Noida, Uttar Pradesh.<br />
+            I am an M.Tech in CSE from Amity University, Noida.<br />
+            <a href="#contact">Contact me</a> if you are interested in hiring
+            me.<br />
+            I will be looking forward to conversing with you.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section id="blog">
+      <img id="blog-img" src="./images/js-blog-min.jpg" alt="blog-image" />
+      <div class="description">
+        <p>
+          This is my blog, built with Gatsby. Here, I share all my knowledge of
+          javascript with the world. Using simple examples I explain various new
+          and old simple and complex Javascript concepts
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="contact-heading heading">CONTACT</h1>
+      <div id="social-links">
+        <a
+          class="social linkedin"
+          href="https://www.linkedin.com/in/vikas-choubey/"
+          target="_blank"
+        >
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+
+        <a
+          class="social insta"
+          href="https://www.instagram.com/vikas.choubey/"
+          target="_blank"
+        >
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a
+          class="social github"
+          href="https://www.github.com/vikas2426"
+          target="_blank"
+        >
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+
+        <a class="social email" href="mailto:vikas.cby@gmail.com" target="_top">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <p class="social email-id">Email : vikas.cby@gmail.com</p>
+      <footer></footer>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
