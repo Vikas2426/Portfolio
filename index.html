@@ -1,90 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
     <title>Vikas Choubey</title>
-    <link href="main.min.css" rel="stylesheet" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <script
-      src="https://kit.fontawesome.com/0ecc3c2f59.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <div class="bg-img"></div>
-    <header id="site-header">
-      <span class="resume-download">
-        <a
-          href="https://drive.google.com/u/4/uc?id=1CIKD6EB4yEYMs8HCajKUeH8098Qx1ijC&export=download"
-          target="_blank"
-        >
-          <i class="fa fa-download" aria-hidden="true"></i>PDF Resume
-        </a>
-      </span>
-      <img id="profile-pic" src="images/profile-min.png" />
-      <h1 id="name">Vikas Choubey</h1>
-      <div id="intro">
-        <p>
-          Hi, welcome to my portfolio. I am a software engineer with masters in
-          Computer Science and Engineering. This website has links to all my
-          projects and internship below.
-        </p>
+    <section class="landing">
+      <div class="header-content">
+        <div class="text">
+          Welcome, I'm <span id="highlight-name">Vikas Choubey</span>.<br />
+          I'm a full-stack web developer.
+        </div>
+        <div class="button page-link"><a href="#">Checkout my work</a></div>
       </div>
+    </section>
 
-      <hr id="intro-hr" />
-      <div class="links">
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/vikas-choubey/"
-          target="_blank"
-        >
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </a>
-
-        <a
-          id="insta"
-          href="https://www.instagram.com/vikas.choubey/"
-          target="_blank"
-        >
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-
-        <a id="github" href="https://www.github.com/vikas2426" target="_blank">
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </a>
-
-        <a id="email" href="mailto:vikas.cby@gmail.com" target="_top">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
+    <nav class="navbar">
+      <img src="./images/logo-min.jpg" alt="logo" />
+      <div class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <div id="contact">
-        <strong id="email-add">
-          <textarea id="email-id" rows="1" readonly>
-vikas.cby@gmail.com</textarea
-          >
-        </strong>
-        <i id="copy-icon" class="far fa-copy 2x"></i>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#landing">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li>
+            <a href="https://vikasjs-blog.netlify.app" target="_blank">Blog</a>
+          </li>
+          <li><a href="">Contact</a></li>
+        </ul>
       </div>
-    </header>
-    <div id="projects">
-      <section>
-        <div class="project-type"><h3>MERN Projects</h3></div>
-        <div class="mern-projects"></div>
-        <!-- <hr /> -->
-      </section>
-      <section>
-        <div class="project-type"><h3>HTML, CSS & JS Projects</h3></div>
-        <div class="vanilla-projects"></div>
-        <!-- <hr /> -->
-      </section>
-      <section>
-        <div class="project-type"><h3>Other Projects</h3></div>
-        <div class="other-projects"></div>
-        <!-- <hr /> -->
-      </section>
-    </div>
+    </nav>
 
-    <div id="footer"></div>
+    <script src="./script.js"></script>
   </body>
-  <script type="text/javascript" src="script.min.js"></script>
 </html>
