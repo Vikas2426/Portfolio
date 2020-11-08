@@ -21,7 +21,7 @@ body {
   background-image: url(images/background-img-min.png);
   background-size: cover;
   z-index: -2;
-  padding: 20%;
+  padding: 15%;
 }
 
 .header-content {
@@ -33,7 +33,7 @@ body {
   color: white;
   font-size: 2.5rem;
   font-weight: 200;
-  padding: 5%;
+  padding: 3%;
 }
 
 #highlight-name {
@@ -58,9 +58,10 @@ body {
   text-decoration: none;
   color: white;
 }
+/* border-top: 3px solid rgb(0, 136, 255); */
 
 #logo {
-  height: 8vh;
+  height: 5vh;
   background-color: transparent;
 }
 
@@ -70,7 +71,9 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 3px solid rgb(0, 136, 255);
-  border-top: 3px solid rgb(0, 136, 255);
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
 }
 
 .navbar-links ul {
@@ -97,7 +100,7 @@ body {
 
 .toggle-button {
   position: absolute;
-  bottom: 2rem;
+  top: 0.6rem;
   right: 1.5rem;
   display: none;
   flex-direction: column;
@@ -175,7 +178,7 @@ body {
 #blog-img {
   width: 40%;
   border-radius: 2%;
- box-shadow: 0px 0px 5px grey;
+  box-shadow: 0px 0px 5px grey;
 }
 
 #contact {
@@ -196,17 +199,17 @@ body {
   margin: 20px;
 }
 .social i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
 }
 .email-id {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 600px) {
   .landing {
     padding-top: 30%;
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   .header-content {
@@ -259,14 +262,16 @@ body {
 }
 
 @media (max-width: 550px) {
-  #about-me,
-  #about-websites {
+  #about-me {
     flex-direction: column;
+    font-size: small;
+    align-items: flex-start;
   }
 
   .feature-container {
     flex-direction: row;
     justify-content: space-between;
+    font-size: 0.7rem;
   }
 
   .feature-container i,
