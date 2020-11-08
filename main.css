@@ -357,6 +357,9 @@ footer {
 }
 
 @media (max-width: 550px) {
+  .sub-section a img {
+    width: 110%;
+  }
   .container-section {
     height: auto;
   }
