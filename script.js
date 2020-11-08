@@ -1,33 +1,33 @@
 var mernProjectList = {
   names: [
-    "Resume",
+
     "Amazon Clone",
     "Google Keep Clone",
     "ToDo App FullStack"
   ],
 
   links: [
-    "https://vikas-choubey-resume.netlify.app/",
+
     "https://vikas2426.github.io/amazon-clone/",
     "https://vikas2426.github.io/GoogleKeepClone-React-App/",
     "https://vikas2426.github.io/ToDo/"
   ],
 
   images: [
-    "images/resume-min.jpg",
+
     "images/amazon-clone-min.jpg",
     "images/keep-min.jpg",
     "images/todoApp-min.jpg",
   ],
 
   tech: [
-    "Resume.io",
-    "Work in progress !",
+
+    "Work in progress ! ReactJS, Firebase Auth",
     "ReactJS, CSS",
     "MongoDB, ExpressJs, REACT, Node",
   ],
 };
-var vanillaProjectList = {
+var vanillaProjectsList = {
   names: [
     "Jokes",
     "Expense App",
@@ -59,6 +59,7 @@ var vanillaProjectList = {
     "Generate linear gradients",
   ],
 };
+
 var otherProjectList = {
   names: [
     "Data Scientist @ IXXO",
@@ -89,87 +90,147 @@ var otherProjectList = {
   ],
 };
 
-// const copy = document.querySelector("#copy-icon");
-// const emailId = document.querySelector("#email-id");
-// const mernProjectContainer = document.querySelector(".mern-projects");
-// const vanillaProjectContainer = document.querySelector(".vanilla-projects");
-// const otherProjectContainer = document.querySelector(".other-projects");
-
-// copy.addEventListener("click", () => {
-//   emailId.select();
-//   document.execCommand("copy");
-// });
-// var mernProjectDiv = "";
-// var vanillaProjectDiv = "";
-// var otherProjectDiv = "";
-
-// for (let i = 0; i < mernProjectList.links.length; i++) {
-//   mernProjectDiv += `       
-//   <div class="card">  
-//     <a href = ${mernProjectList.links[i]} target="_blank">    
-//       <div class="project-image-container">
-//         <img class="project-image" src= '${mernProjectList.images[i]}' width="100%" height="50%" />  
-//       </div>
-//       <div class="project-info-container">
-//         <h4 class="project-name">${mernProjectList.names[i]}</h4>  
-//         <p class="project-caption">${mernProjectList.tech[i]}</p>
-//         <button class="visit-link">VISIT</button>
-//       </div>
-//     </a>   
-//   </div> `;
-// }
-
-// mernProjectContainer.innerHTML = mernProjectDiv;
-
-// for (let i = 0; i < vanillaProjectList.links.length; i++) {
-//   vanillaProjectDiv += `         
-//   <div class="card">
-//     <a href = ${vanillaProjectList.links[i]} target="_blank">
-//     <div class="project-image-container">
-//         <img class="project-image" src= '${vanillaProjectList.images[i]}' width="100%" height="50%" />  
-//       </div>
-//       <div class="project-info-container">
-//         <h4 class="project-name">${vanillaProjectList.names[i]}</h4>  
-//         <p class="project-caption">${vanillaProjectList.tech[i]}</p>
-//         <button class="visit-link">VISIT</button>
-//       </div>
-//     </a>
-//   </div> `;
-// }
-
-// vanillaProjectContainer.innerHTML = vanillaProjectDiv;
-
-// for (let i = 0; i < otherProjectList.links.length; i++) {
-//   otherProjectDiv += `         
-//   <div class="card">
-//     <a href = ${otherProjectList.links[i]} target="_blank">
-//     <div class="project-image-container">
-//         <img class="project-image" src= '${otherProjectList.images[i]}' width="100%" height="50%" />  
-//       </div>
-//       <div class="project-info-container">
-//         <h4 class="project-name">${otherProjectList.names[i]}</h4>  
-//         <p class="project-caption">${otherProjectList.tech[i]}</p>
-//         <button class="visit-link">GITHUB</button>
-//       </div>
-//     </a>
-// </div> `;
-// }
-
-// otherProjectContainer.innerHTML = otherProjectDiv;
 
 
-
+// Copyright text in footer
 const footer = document.querySelector("footer");
 const year = new Date().getFullYear();
 footer.innerHTML = `<p></p>Copyright © Vikas Choubey, ${year}`;
 
 
-
+//hamburger menu
 const toggleButton = document.querySelector(".toggle-button");
 const navLinks = document.querySelector(".navbar-links");
 
 toggleButton.addEventListener('click', () => {
   navLinks.classList.toggle('active')
 });
+
+
+const navLI = document.querySelectorAll('ul > *');
+
+for (var i = 0; i < navLI.length; i++) {
+  navLI[i].addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+  });
+}
+
+
+
+// MERN projects
+const mernButton = document.querySelector(".mern");
+const mernSection = document.querySelector(".mern-section");
+var mernProjectDiv = "";
+
+
+for (let i = 0; i < mernProjectList.links.length; i++) {
+  mernProjectDiv += ` <section class="sub-section">
+<a
+  class="blog-link"
+  href='${mernProjectList.links[i]}'
+  target="_blank"
+>
+<img class="project-img" src='${mernProjectList.images[i]}' />
+</div>
+</a>
+<div class="img-description">
+<h4 class="project-name">${mernProjectList.names[i]}</h4> 
+  <p>
+  ${mernProjectList.tech[i]}
+  </p>
+</div>
+</section>
+`;
+}
+
+mernSection.innerHTML += mernProjectDiv;
+
+
+
+
+
+// vanillaProjectDiv
+
+const jsButton = document.querySelector(".javascript");
+const jsSection = document.querySelector(".js-section");
+var vanillaProjectDiv = "";
+
+for (let i = 0; i < vanillaProjectsList.links.length; i++) {
+  vanillaProjectDiv += ` <section class="sub-section">
+<a
+  class="blog-link"
+  href='${vanillaProjectsList.links[i]}'
+  target="_blank"
+>
+<img class="project-img" src='${vanillaProjectsList.images[i]}' />
+</div>
+</a>
+<div class="img-description">
+<h4 class="project-name">${vanillaProjectsList.names[i]}</h4> 
+  <p>
+  ${vanillaProjectsList.tech[i]}
+  </p>
+</div>
+</section>`;
+}
+jsSection.innerHTML += vanillaProjectDiv;
+
+
+
+
+//   otherProjectDiv
+const otherButton = document.querySelector(".other");
+const otherSection = document.querySelector(".other-section");
+var otherProjectDiv = "";
+
+
+for (let i = 0; i < otherProjectList.links.length; i++) {
+  otherProjectDiv += `<section class="sub-section">
+<a
+  class="blog-link"
+  href='${otherProjectList.links[i]}'
+  target="_blank"
+>
+<img class="project-img" src='${otherProjectList.images[i]}' />
+</div>
+</a>
+<div class="img-description">
+<h4 class="project-name">${otherProjectList.names[i]}</h4> 
+  <p>
+  ${otherProjectList.tech[i]}
+  </p>
+</div>
+</section>
+`;
+}
+
+otherSection.innerHTML += otherProjectDiv;
+
+
+
+// display only MERN projects
+mernButton.addEventListener('click', () => {
+  mernSection.classList.remove("hide");
+  jsSection.classList.add("hide");
+  otherSection.classList.add("hide");
+});
+
+// display only Javascript projects
+
+jsButton.addEventListener('click', () => {
+  jsSection.classList.remove("hide");
+  mernSection.classList.add("hide");
+  otherSection.classList.add("hide");
+});
+
+// display only Other projects
+
+otherButton.addEventListener('click', () => {
+  otherSection.classList.remove("hide");
+  jsSection.classList.add("hide");
+  mernSection.classList.add("hide");
+})
+
+
 
 
