@@ -213,6 +213,9 @@ mernButton.addEventListener('click', () => {
   mernSection.classList.remove("hide");
   jsSection.classList.add("hide");
   otherSection.classList.add("hide");
+  mernButton.classList.add('selected');
+  jsButton.classList.remove('selected');
+  otherButton.classList.remove('selected');
 });
 
 // display only Javascript projects
@@ -221,6 +224,9 @@ jsButton.addEventListener('click', () => {
   jsSection.classList.remove("hide");
   mernSection.classList.add("hide");
   otherSection.classList.add("hide");
+  mernButton.classList.remove('selected');
+  jsButton.classList.add('selected');
+  otherButton.classList.remove('selected');
 });
 
 // display only Other projects
@@ -229,6 +235,9 @@ otherButton.addEventListener('click', () => {
   otherSection.classList.remove("hide");
   jsSection.classList.add("hide");
   mernSection.classList.add("hide");
+  mernButton.classList.remove('selected');
+  jsButton.classList.remove('selected');
+  otherButton.classList.add('selected');
 })
 
 
