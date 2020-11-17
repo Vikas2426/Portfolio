@@ -309,8 +309,6 @@ footer {
   }
   .landing {
     padding-top: 30%;
-    padding-left: 2%;
-    padding-right: 2%;
   }
 
   .header-content {
@@ -368,9 +366,14 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .landing {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
   .header-content {
     padding-top: 10vh;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 200%;
   }
 
