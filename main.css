@@ -257,6 +257,10 @@ body {
   transition: transform 0.5s;
 }
 
+.project-name {
+  margin-bottom: -5%;
+}
+
 .blog-img:hover,
 .blog-img:focus,
 .project-img:hover,

@@ -135,7 +135,7 @@ for (let i = 0; i < mernProjectList.links.length; i++) {
 </a>
 <div class="img-description">
 <h4 class="project-name">${mernProjectList.names[i]}</h4> 
-  <p>
+  <p class="project-desc">
   ${mernProjectList.tech[i]}
   </p>
 </div>
@@ -167,7 +167,7 @@ for (let i = 0; i < vanillaProjectsList.links.length; i++) {
 </a>
 <div class="img-description">
 <h4 class="project-name">${vanillaProjectsList.names[i]}</h4> 
-  <p>
+  <p class="project-desc">
   ${vanillaProjectsList.tech[i]}
   </p>
 </div>
@@ -196,7 +196,7 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
 </a>
 <div class="img-description">
 <h4 class="project-name">${otherProjectList.names[i]}</h4> 
-  <p>
+  <p class="project-desc">
   ${otherProjectList.tech[i]}
   </p>
 </div>
