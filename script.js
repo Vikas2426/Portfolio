@@ -22,9 +22,9 @@ var mernProjectList = {
 
   tech: [
 
-    "Work in progress ! ReactJS, Firebase Auth",
-    "ReactJS, CSS",
-    "MongoDB, ExpressJs, REACT, Node",
+    "Work in progress ! Clone of Amazon e-commerce website using ReactJS and Firebase Auth",
+    "Clone of Google's Note taking app 'Google Keep' using ReactJS",
+    "Full-stack to-do list web app using MongoDB, ExpressJs, ReactJS and Node",
   ],
 };
 var vanillaProjectsList = {
@@ -53,10 +53,10 @@ var vanillaProjectsList = {
 
   tech: [
 
-    "HTML5, CSS, Javascript and an API",
-    "HTML5, CSS, Javascript and Bootstrap.",
-    "HTML5, CSS and Javascript.",
-    "Generate linear gradients",
+    "A joke generating app which displays joke fetched from an API. Used HTML5, CSS, Javascript and an API",
+    "A expense management web app using HTML5, CSS, Javascript and Bootstrap. Takes in amount spent and item/service bought.",
+    "Music generator web app. Plays audio on listening to click to different coloured scales. Used HTML5, CSS and Javascript.",
+    "Linear gradient generator web app. Let you choose colours for the gradient and copy the code with just one click. Used HTML5, CSS and Javascript",
   ],
 };
 
@@ -83,9 +83,9 @@ var otherProjectList = {
   ],
 
   tech: [
-    "Internship project. Logistic Regression",
-    "Machine learning projects. Github Repository.",
-    "Game bot to play the google offline dinosaur game.",
+    "Internship project. Developed a program which classifies text into various categories such as email, code, web content etc. Trained a logistic regression model for text classification and used 'Tesseract OCR' for optical charater recognition.",
+    "Machine learning projects. All my other machine learning project code are in my github.",
+    "Game bot to play the google offline dinosaur game.Used python library 'PIL' for real time image grabbing and optimisation and 'PYAUTOGUI' for simulating button clicks.",
 
   ],
 };
