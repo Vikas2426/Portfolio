@@ -363,6 +363,11 @@ footer {
   #profile-pic {
     width: 50%;
   }
+
+  .sub-section a img {
+    width: 100%;
+  }
+
   .img-description {
     line-height: normal;
     width: 100%;
@@ -404,9 +409,7 @@ footer {
     width: 90%;
   }
 
-  .sub-section a img {
-    width: 100%;
-  }
+  
 
   .img-description {
     padding-left: 5%;
