@@ -16,8 +16,8 @@ var mernProjectList = {
   images: [
 
     "images/amazon-clone-min.jpg",
-    "images/keep-min.jpg",
-    "images/todoApp-min.jpg",
+    "images/keep.gif",
+    "images/todo.gif",
   ],
 
   tech: [
@@ -45,10 +45,10 @@ var vanillaProjectsList = {
 
   images: [
 
-    "/images/justKidding-min.jpeg",
+    "/images/joker.gif",
     "images/expense-min.jpeg",
-    "images/clickmusic-min.jpeg",
-    "images/gradient.png",
+    "images/music.gif",
+    "images/gradient.gif",
   ],
 
   tech: [
