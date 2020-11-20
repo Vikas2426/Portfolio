@@ -371,6 +371,9 @@ footer {
 }
 
 @media (max-width: 400px) {
+  #logo {
+    height: 10vh;
+  }
   .landing {
     padding-left: 2%;
     padding-right: 2%;
@@ -379,11 +382,11 @@ footer {
   .header-content {
     padding-top: 10vh;
     font-size: 1.3rem;
-    line-height: 200%;
+    line-height: 330%;
   }
 
   #highlight-name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .container-section {
@@ -394,14 +397,14 @@ footer {
   }
 
   .sub-section a {
-    width: 80%;
+    width: 90%;
   }
-  .project-img {
-    width: 90vw;
-    height: 30vh;
+
+  .sub-section a img {
+    width: 100%;
   }
 
   .img-description {
-    padding-left: 22%;
+    padding-left: 5%;
   }
 }
