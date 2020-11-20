@@ -54,8 +54,8 @@ var vanillaProjectsList = {
   tech: [
 
     "A joke generating app which displays joke fetched from an API. Used HTML5, CSS, Javascript and an API",
-    "A expense management web app using HTML5, CSS, Javascript and Bootstrap. Takes in amount spent and item/service bought.",
-    "Music generator web app. Plays audio on listening to click to different coloured scales. Used HTML5, CSS and Javascript.",
+    "An expense management web app using HTML5, CSS, Javascript and Bootstrap. Takes in amount spent and item/service bought.",
+    "Music generator web app. Plays audio on listening to clicks on different coloured scales. Used HTML5, CSS and Javascript.",
     "Linear gradient generator web app. Let you choose colours for the gradient and copy the code with just one click. Used HTML5, CSS and Javascript",
   ],
 };
@@ -83,9 +83,9 @@ var otherProjectList = {
   ],
 
   tech: [
-    "Internship project. Developed a program which classifies text into various categories such as email, code, web content etc. Trained a logistic regression model for text classification and used 'Tesseract OCR' for optical charater recognition.",
-    "Machine learning projects. All my other machine learning project code are in my github.",
-    "Game bot to play the google offline dinosaur game.Used python library 'PIL' for real time image grabbing and optimisation and 'PYAUTOGUI' for simulating button clicks.",
+    "Developed a program which classifies text into various categories such as email, code, web content etc. Trained a logistic regression model for text classification and used 'Tesseract OCR' for optical character recognition.",
+    "All my other machine learning project codes are in my github.",
+    "Game bot to play google's offline dinosaur game. Used python library 'PIL' for real time image grabbing and optimisation and 'PYAUTOGUI' a player.",
 
   ],
 };
