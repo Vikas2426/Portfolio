@@ -372,7 +372,7 @@ footer {
 
 @media (max-width: 400px) {
   #logo {
-    height: 10vh;
+    height: 8.5vh;
   }
   .landing {
     padding-left: 2%;
@@ -382,7 +382,7 @@ footer {
   .header-content {
     padding-top: 10vh;
     font-size: 1.3rem;
-    line-height: 330%;
+    line-height: 300%;
   }
 
   #highlight-name {
