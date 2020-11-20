@@ -396,7 +396,11 @@ footer {
   .sub-section a {
     width: 80%;
   }
-
+  .project-img {
+    width: 80vw;
+    height: 30vh;
+  }
+  
   .img-description {
     padding-left: 22%;
   }
