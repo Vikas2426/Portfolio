@@ -130,7 +130,7 @@ for (let i = 0; i < mernProjectList.links.length; i++) {
   href='${mernProjectList.links[i]}'
   target="_blank"
 >
-<img class="project-img" src='${mernProjectList.images[i]}' />
+<img class="project-img" src='${mernProjectList.images[i]}' alt='${mernProjectList.names[i]}'/>
 </div>
 </a>
 <div class="img-description">
@@ -162,7 +162,7 @@ for (let i = 0; i < vanillaProjectsList.links.length; i++) {
   href='${vanillaProjectsList.links[i]}'
   target="_blank"
 >
-<img class="project-img" src='${vanillaProjectsList.images[i]}' />
+<img class="project-img" src='${vanillaProjectsList.images[i]}'  alt='${vanillaProjectsList.names[i]}'/>
 </div>
 </a>
 <div class="img-description">
@@ -191,7 +191,7 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
   href='${otherProjectList.links[i]}'
   target="_blank"
 >
-<img class="project-img" src='${otherProjectList.images[i]}' />
+<img class="project-img" src='${otherProjectList.images[i]}'  alt='${otherProjectList.names[i]}'/>
 </div>
 </a>
 <div class="img-description">
