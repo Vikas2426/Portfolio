@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .landing {
@@ -408,8 +409,6 @@ footer {
   .sub-section a {
     width: 90%;
   }
-
-
 
   .img-description {
     padding-left: 5%;
