@@ -27,7 +27,7 @@ var mernProjectList = {
 
     "Work in progress ! Clone of Amazon e-commerce website using ReactJS and Firebase Auth",
     "Clone of Google's Note taking app 'Google Keep' using ReactJS. With theme that defaults to system's theme(Light/Dark).",
-    "ReactJS app to visualize the runtime of different algorithms based on user input. Algorithms : Linear/Binary Search, Bubble/Quick/Merge, Addition/Arithmetic Progression/Optimized Arithmetic Progression",
+    "ReactJS app to visualize the runtime of different algorithms based on user input. Algorithms : Linear/Binary Search, Bubble/Quick/Merge Sort, Addition/Arithmetic Progression/Optimized Arithmetic Progression",
     "Full-stack to-do list web app using MongoDB, ExpressJs, ReactJS and Node",
   ],
 };
