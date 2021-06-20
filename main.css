@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -23,14 +23,14 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.877);
-  background-image: url("images/background-img-min.png");
+  background-image: url('images/background-img-min.png');
   background-size: cover;
   z-index: -2;
   padding: 15%;
 }
 
 .header-content {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,6 +264,10 @@ body {
 
 .project-name {
   margin-bottom: -3%;
+}
+
+.highlighted-text {
+  color: rgb(0, 136, 255);
 }
 
 .blog-img:hover,

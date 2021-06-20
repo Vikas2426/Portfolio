@@ -25,10 +25,10 @@ var mernProjectList = {
 
   tech: [
 
-    "Work in progress ! Clone of Amazon e-commerce website using ReactJS and Firebase Auth",
-    "Clone of Google's Note taking app 'Google Keep' using ReactJS. With theme that defaults to system's theme(Light/Dark).",
-    "ReactJS app to visualize the runtime of different algorithms based on user input. Algorithms : Linear/Binary Search, Bubble/Quick/Merge Sort, Addition/Arithmetic Progression/Optimized Arithmetic Progression",
-    "Full-stack to-do list web app using MongoDB, ExpressJs, ReactJS and Node",
+    "Work in progress! <strong class='highlighted-text'>Clone of Amazon e-commerce</strong>  website using ReactJS and Firebase Auth",
+    "Clone of Google's Note taking app 'Google Keep' using ReactJS. With <strong class='highlighted-text'>theme that defaults to system's theme(Light/Dark)</strong>.",
+    "ReactJS app to <strong class='highlighted-text'>visualize the runtime of different algorithms based on user input.</strong> Algorithms : Linear/Binary Search, Bubble/Quick/Merge Sort, Addition/Arithmetic Progression/Optimized Arithmetic Progression",
+    "Full-stack to-do list web app with <strong class='highlighted-text'>drag-n-drop feature</strong> using React-beautiful-DND,  MongoDB, ExpressJs, ReactJS and Node",
   ],
 };
 var vanillaProjectsList = {
@@ -99,7 +99,7 @@ var otherProjectList = {
 // Copyright text in footer
 const footer = document.querySelector("footer");
 const year = new Date().getFullYear();
-footer.innerHTML = `<p></p>Copyright © Vikas Choubey, ${year}`;
+footer.innerHTML = `<p>Copyright © Vikas Choubey, ${year}</p>`;
 
 
 //hamburger menu
