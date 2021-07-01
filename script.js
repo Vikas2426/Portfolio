@@ -34,33 +34,33 @@ var mernProjectList = {
 var vanillaProjectsList = {
   names: [
     "Jokes",
+    "Gradient Generator",
     "Expense App",
     "Click Music",
-    "Gradient Generator",
   ],
 
   links: [
 
     "https://just-kidding.netlify.app/",
+    "https://gradientgenerator.netlify.com",
     "https://vikasexpense.netlify.com",
     "https://clickmusic.netlify.com/",
-    "https://gradientgenerator.netlify.com"
   ],
 
   images: [
 
     "/images/joker.gif",
+    "images/bgG3.gif",
     "images/expense-min.jpeg",
     "images/music.gif",
-    "images/gradient.gif",
   ],
 
   tech: [
 
     "A joke generating app which displays joke fetched from an API. Used HTML5, CSS, Javascript and an API",
+    "Linear gradient generator web app. Let you choose colours for the gradient and copy the code with just one click. Used HTML5, CSS and Javascript",
     "An expense management web app using HTML5, CSS, Javascript and Bootstrap. Takes in amount spent and item/service bought.",
     "Music generator web app. Plays audio on listening to clicks on different coloured scales. Used HTML5, CSS and Javascript.",
-    "Linear gradient generator web app. Let you choose colours for the gradient and copy the code with just one click. Used HTML5, CSS and Javascript",
   ],
 };
 
