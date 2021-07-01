@@ -133,8 +133,8 @@ body {
 }
 
 .container-section {
-  padding: 5%;
-  margin-top: 5%;
+  padding: 2%;
+  background-color: #f5f5f5;
 }
 
 .sub-section {
@@ -142,6 +142,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 2%;
+  background-color: #f5f5f5;
 }
 
 .sub-section a {
@@ -152,8 +153,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  /* margin-top: 5%;
+  margin-bottom: 5%; */
   width: 100%;
 }
 
@@ -196,8 +197,17 @@ body {
   width: 80%;
 }
 
+#about-me{
+  padding-left: 4.05%;
+}
+
 #portfolio {
-  background-color: #f5f5f5;
+  background-color: #fff;
+  width: 100vw;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  height:auto;
 }
 
 .blog-link {
@@ -229,7 +239,7 @@ body {
   font-size: large;
   font-weight: 500;
   cursor: pointer;
-  padding: 1%;
+  padding: 5px 2%;
   border-radius: 3px;
 }
 
@@ -263,7 +273,8 @@ body {
 }
 
 .project-name {
-  margin-bottom: -3%;
+  margin: 0;
+  width: 100%;
 }
 
 .highlighted-text {
@@ -272,8 +283,8 @@ body {
 
 .blog-img:hover,
 .blog-img:focus,
-.project-img:hover,
-.project-img:focus {
+.card:hover,
+.card:focus {
   transform: scale(1.1);
 }
 
@@ -380,12 +391,64 @@ footer {
   .img-description {
     line-height: normal;
     width: 100%;
+    padding:0%;
   }
 
   .feature-container i,
   h2 {
     font-size: 1.5em;
   }
+}
+.projects{
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.card{
+  width: 22vw;
+  height: 55vh;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #aaa;
+  margin-bottom: 1%;
+  background-color: rgb(250, 250, 250);
+}
+
+.card>a>img{
+  width:100%;
+  height: 50%;
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+.card>div{
+  width: 100%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+.project-desc{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin:1%;
+  margin-bottom: 2%;
+}
+
+.demo-btn{
+  margin-left: 1%;
+  padding: 2% 4%;
+  font-size: 1em;
+  background-color: rgb(0, 136, 255);
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+}
+
+.flex{
+  display: flex;
 }
 
 @media (max-width: 400px) {
