@@ -25,10 +25,10 @@ var mernProjectList = {
 
   tech: [
 
-    "Work in progress! <strong class='highlighted-text'>Clone of Amazon e-commerce</strong>  website using ReactJS and Firebase Auth",
-    "Clone of Google's Note taking app 'Google Keep' using ReactJS. With <strong class='highlighted-text'>theme that defaults to system's theme(Light/Dark)</strong>.",
-    "ReactJS app to <strong class='highlighted-text'>visualize the runtime of different algorithms based on user input.</strong> Algorithms : Linear/Binary Search, Bubble/Quick/Merge Sort, Addition/Arithmetic Progression/Optimized Arithmetic Progression",
-    "Full-stack to-do list web app with <strong class='highlighted-text'>drag-n-drop feature</strong> using React-beautiful-DND,  MongoDB, ExpressJs, ReactJS and Node",
+    "Work in progress! <span class='highlighted-text'>Clone of Amazon e-commerce</span>  website using ReactJS and Firebase Auth",
+    "Clone of Google's Note taking app 'Google Keep' using ReactJS. With <span class='highlighted-text'>theme that defaults to system's theme(Light/Dark)</span>.",
+    "ReactJS app to <span class='highlighted-text'>visualize the runtime of different algorithms based on user input.</span> Algorithms for searching,sorting, optimizes arithmetic.",
+    "Full-stack to-do list web app with <span class='highlighted-text'>drag-n-drop feature</span> using React-beautiful-DND,  MongoDB, ExpressJs, ReactJS and Node",
   ],
 };
 var vanillaProjectsList = {
@@ -80,14 +80,14 @@ var otherProjectList = {
   ],
 
   images: [
-    "images/ixxo-min.jpeg",
+    "images/ixxo-min.png",
     "images/ml-min.jpg",
     "images/dino-min.jpg",
 
   ],
 
   tech: [
-    "Developed a program which classifies text into various categories such as email, code, web content etc. Trained a logistic regression model for text classification and used 'Tesseract OCR' for optical character recognition.",
+    "Trained logistic regression model and built text classifier and categoriser (email/code/web content etc.) Used 'Tesseract OCR' for optical character recognition.",
     "All my other machine learning project codes are in my github.",
     "Game bot to play google's offline dinosaur game. Used python library 'PIL' for real time image grabbing and optimisation and 'PYAUTOGUI' a player.",
 
@@ -128,21 +128,24 @@ var mernProjectDiv = "";
 
 
 for (let i = 0; i < mernProjectList.links.length; i++) {
-  mernProjectDiv += ` <section class="sub-section">
+  mernProjectDiv += ` <section class="card">
 <a
   class="blog-link"
   href='${mernProjectList.links[i]}'
   target="_blank"
 >
 <img class="project-img" src='${mernProjectList.images[i]}' alt='${mernProjectList.names[i]}'/>
-</div>
+
 </a>
 <div class="img-description">
-<h4 class="project-name">${mernProjectList.names[i]}</h4> 
+<p class="project-name"><strong>${mernProjectList.names[i]}</strong></p> 
   <p class="project-desc">
   ${mernProjectList.tech[i]}
   </p>
+  
 </div>
+<a href='${mernProjectList.links[i]}'
+  target="_blank"><button class='demo-btn'>Demo <i class="fas fa-external-link-alt"></i></button></a>
 </section>
 `;
 }
@@ -160,21 +163,24 @@ const jsSection = document.querySelector(".js-section");
 var vanillaProjectDiv = "";
 
 for (let i = 0; i < vanillaProjectsList.links.length; i++) {
-  vanillaProjectDiv += ` <section class="sub-section">
+  vanillaProjectDiv += ` <section class="card">
 <a
   class="blog-link"
   href='${vanillaProjectsList.links[i]}'
   target="_blank"
 >
 <img class="project-img" src='${vanillaProjectsList.images[i]}'  alt='${vanillaProjectsList.names[i]}'/>
-</div>
+
 </a>
 <div class="img-description">
-<h4 class="project-name">${vanillaProjectsList.names[i]}</h4> 
+<p class="project-name"><strong>${vanillaProjectsList.names[i]}</strong></p> 
   <p class="project-desc">
   ${vanillaProjectsList.tech[i]}
   </p>
+  
 </div>
+<a href='${vanillaProjectsList.links[i]}'
+  target="_blank"><button class='demo-btn'>Demo <i class="fas fa-external-link-alt"></i></button></a>
 </section>`;
 }
 jsSection.innerHTML += vanillaProjectDiv;
@@ -189,21 +195,23 @@ var otherProjectDiv = "";
 
 
 for (let i = 0; i < otherProjectList.links.length; i++) {
-  otherProjectDiv += `<section class="sub-section">
+  otherProjectDiv += `<section class="card">
 <a
   class="blog-link"
   href='${otherProjectList.links[i]}'
   target="_blank"
 >
 <img class="project-img" src='${otherProjectList.images[i]}'  alt='${otherProjectList.names[i]}'/>
-</div>
 </a>
 <div class="img-description">
-<h4 class="project-name">${otherProjectList.names[i]}</h4> 
+<p class="project-name"><strong>${otherProjectList.names[i]}</strong></p> 
   <p class="project-desc">
   ${otherProjectList.tech[i]}
   </p>
+  
 </div>
+<a href='${otherProjectList.links[i]}'
+  target="_blank"><button class='demo-btn'>Demo <i class="fas fa-external-link-alt"></i></button></a>
 </section>
 `;
 }
@@ -214,9 +222,12 @@ otherSection.innerHTML += otherProjectDiv;
 
 // display only MERN projects
 mernButton.addEventListener('click', () => {
-  mernSection.classList.remove("hide");
-  jsSection.classList.add("hide");
-  otherSection.classList.add("hide");
+  mernSection.style.display = 'flex';
+  mernSection.style.flexWrap = 'wrap';
+
+  jsSection.style.display = 'none';
+  otherSection.style.display = 'none';
+
   mernButton.classList.add('selected');
   jsButton.classList.remove('selected');
   otherButton.classList.remove('selected');
@@ -225,9 +236,10 @@ mernButton.addEventListener('click', () => {
 // display only Javascript projects
 
 jsButton.addEventListener('click', () => {
-  jsSection.classList.remove("hide");
-  mernSection.classList.add("hide");
-  otherSection.classList.add("hide");
+  jsSection.style.display = 'flex';
+  mernSection.style.display = 'none';
+  otherSection.style.display = 'none';
+
   mernButton.classList.remove('selected');
   jsButton.classList.add('selected');
   otherButton.classList.remove('selected');
@@ -236,9 +248,10 @@ jsButton.addEventListener('click', () => {
 // display only Other projects
 
 otherButton.addEventListener('click', () => {
-  otherSection.classList.remove("hide");
-  jsSection.classList.add("hide");
-  mernSection.classList.add("hide");
+  otherSection.style.display = 'flex';
+  jsSection.style.display = 'none';
+  mernSection.style.display = 'none';
+
   mernButton.classList.remove('selected');
   jsButton.classList.remove('selected');
   otherButton.classList.add('selected');
