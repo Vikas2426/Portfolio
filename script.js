@@ -19,7 +19,7 @@ var mernProjectList = {
 
     "images/amazon-clone-min.jpg",
     "images/keep.webm",
-    "images/visualizr.png",
+    "images/visualizr.webm",
     "images/todo.webm",
   ],
 
@@ -51,7 +51,7 @@ var vanillaProjectsList = {
 
     "/images/joker.webm",
     "images/gradient.webm",
-    "images/expense-min.jpeg",
+    "images/expense.webm",
     "images/music.webm",
   ],
 
@@ -129,18 +129,20 @@ var mernProjectDiv = "";
 
 for (let i = 0; i < mernProjectList.links.length; i++) {
   mernProjectDiv += ` <section class="card">
-<a
+  <div class="card-img-container">
+  <a
   class="blog-link"
   href=${mernProjectList.links[i]}
   target="_blank"
->
-${ !mernProjectList.images[i].endsWith('webm') ? 
-`<img  src=${mernProjectList.images[i]} alt=${mernProjectList.names[i]}/>`
-: `<video  autoplay loop>
+  >
+  ${ !mernProjectList.images[i].endsWith('webm') ? 
+  `<img  src=${mernProjectList.images[i]} alt=${mernProjectList.names[i]}/>`
+  : `<video  autoplay loop>
   <source src=${mernProjectList.images[i]} type="video/webm">
   </video>`
 }
 </a>
+</div>
 <div class="img-description">
 <p class="project-name"><strong>${mernProjectList.names[i]}</strong></p> 
   <p class="project-desc">
@@ -168,6 +170,7 @@ var vanillaProjectDiv = "";
 
 for (let i = 0; i < vanillaProjectsList.links.length; i++) {
   vanillaProjectDiv += ` <section class="card">
+  <div class="card-img-container">
 <a
   class="blog-link"
   href=${vanillaProjectsList.links[i]}
@@ -179,6 +182,7 @@ ${ !vanillaProjectsList.images[i].endsWith('webm') ?
   </video>`
 }
 </a>
+</div>
 <div class="img-description">
 <p class="project-name"><strong>${vanillaProjectsList.names[i]}</strong></p> 
   <p class="project-desc">
@@ -203,6 +207,7 @@ var otherProjectDiv = "";
 
 for (let i = 0; i < otherProjectList.links.length; i++) {
   otherProjectDiv += `<section class="card">
+  <div class="card-img-container">
 <a
   class="blog-link"
   href=${otherProjectList.links[i]}
@@ -210,6 +215,7 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
 >
 <img  loading="lazy" src=${otherProjectList.images[i]}  alt=${otherProjectList.names[i]}/>
 </a>
+</div>
 <div class="img-description">
 <p class="project-name"><strong>${otherProjectList.names[i]}</strong></p> 
   <p class="project-desc">
