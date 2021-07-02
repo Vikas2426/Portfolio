@@ -18,9 +18,9 @@ var mernProjectList = {
   images: [
 
     "images/amazon-clone-min.jpg",
-    "images/keep.gif",
+    "images/keep.webm",
     "images/visualizr.png",
-    "images/todo.gif",
+    "images/todo.webm",
   ],
 
   tech: [
@@ -49,10 +49,10 @@ var vanillaProjectsList = {
 
   images: [
 
-    "/images/joker.gif",
-    "images/bgG3.gif",
+    "/images/joker.webm",
+    "images/gradient.webm",
     "images/expense-min.jpeg",
-    "images/music.gif",
+    "images/music.webm",
   ],
 
   tech: [
@@ -131,11 +131,15 @@ for (let i = 0; i < mernProjectList.links.length; i++) {
   mernProjectDiv += ` <section class="card">
 <a
   class="blog-link"
-  href='${mernProjectList.links[i]}'
+  href=${mernProjectList.links[i]}
   target="_blank"
 >
-<img class="project-img" src='${mernProjectList.images[i]}' alt='${mernProjectList.names[i]}'/>
-
+${ !mernProjectList.images[i].endsWith('webm') ? 
+`<img  src=${mernProjectList.images[i]} alt=${mernProjectList.names[i]}/>`
+: `<video  autoplay loop>
+  <source src=${mernProjectList.images[i]} type="video/webm">
+  </video>`
+}
 </a>
 <div class="img-description">
 <p class="project-name"><strong>${mernProjectList.names[i]}</strong></p> 
@@ -166,11 +170,14 @@ for (let i = 0; i < vanillaProjectsList.links.length; i++) {
   vanillaProjectDiv += ` <section class="card">
 <a
   class="blog-link"
-  href='${vanillaProjectsList.links[i]}'
+  href=${vanillaProjectsList.links[i]}
   target="_blank"
 >
-<img class="project-img" src='${vanillaProjectsList.images[i]}'  alt='${vanillaProjectsList.names[i]}'/>
-
+${ !vanillaProjectsList.images[i].endsWith('webm') ? 
+`<img  loading="lazy" src=${vanillaProjectsList.images[i]}  alt=${vanillaProjectsList.names[i]}/>` : `<video  autoplay loop>
+  <source src=${vanillaProjectsList.images[i]} type="video/webm">
+  </video>`
+}
 </a>
 <div class="img-description">
 <p class="project-name"><strong>${vanillaProjectsList.names[i]}</strong></p> 
@@ -198,10 +205,10 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
   otherProjectDiv += `<section class="card">
 <a
   class="blog-link"
-  href='${otherProjectList.links[i]}'
+  href=${otherProjectList.links[i]}
   target="_blank"
 >
-<img class="project-img" src='${otherProjectList.images[i]}'  alt='${otherProjectList.names[i]}'/>
+<img  loading="lazy" src=${otherProjectList.images[i]}  alt=${otherProjectList.names[i]}/>
 </a>
 <div class="img-description">
 <p class="project-name"><strong>${otherProjectList.names[i]}</strong></p> 
@@ -211,7 +218,7 @@ for (let i = 0; i < otherProjectList.links.length; i++) {
   
 </div>
 <a href='${otherProjectList.links[i]}'
-  target="_blank"><button class='demo-btn'>Demo <i class="fas fa-external-link-alt"></i></button></a>
+  target="_blank"><button class='demo-btn'>Github Repo <i class="fas fa-external-link-alt"></i></button></a>
 </section>
 `;
 }
@@ -223,12 +230,11 @@ otherSection.innerHTML += otherProjectDiv;
 // display only MERN projects
 mernButton.addEventListener('click', () => {
   mernSection.style.display = 'flex';
-  mernSection.style.flexWrap = 'wrap';
+  mernButton.classList.add('selected');
 
   jsSection.style.display = 'none';
   otherSection.style.display = 'none';
 
-  mernButton.classList.add('selected');
   jsButton.classList.remove('selected');
   otherButton.classList.remove('selected');
 });
@@ -237,11 +243,12 @@ mernButton.addEventListener('click', () => {
 
 jsButton.addEventListener('click', () => {
   jsSection.style.display = 'flex';
+  jsButton.classList.add('selected');
+
   mernSection.style.display = 'none';
   otherSection.style.display = 'none';
 
   mernButton.classList.remove('selected');
-  jsButton.classList.add('selected');
   otherButton.classList.remove('selected');
 });
 
@@ -249,12 +256,13 @@ jsButton.addEventListener('click', () => {
 
 otherButton.addEventListener('click', () => {
   otherSection.style.display = 'flex';
+  otherButton.classList.add('selected');
+
   jsSection.style.display = 'none';
   mernSection.style.display = 'none';
 
   mernButton.classList.remove('selected');
   jsButton.classList.remove('selected');
-  otherButton.classList.add('selected');
 })
 
 
