@@ -460,7 +460,8 @@ footer {
   .img-description {
     line-height: normal;
     width: 100%;
-    padding:0%;
+    padding:0.5em;
+    /* margin-left: 0.5em; */
   }
 
   /* #about-me{
@@ -532,7 +533,7 @@ footer {
   }
 
   .img-description {
-    padding-left: 5%;
+    margin-left: 0.5em;
   }
 
   .blog-img{
