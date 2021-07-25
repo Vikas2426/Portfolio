@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('./images/chevron-double-left.svg');
 
 * {
   box-sizing: border-box;
@@ -71,16 +73,16 @@ body {
 }
 
 .navbar {
-  background-color: #141414;
+  background-color: #141414f3;
   width: 100vw;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid rgb(0, 136, 255);
+  border-bottom: 2px solid rgba(0, 136, 255, 0.76);
   position: fixed;
   top: 0;
   overflow-y: hidden;
   z-index: 10;
-  padding: 0;
+  padding: 1%;
 }
 
 .navbar-links ul {
@@ -100,6 +102,7 @@ body {
   text-decoration: none;
   padding: 0.5rem;
   display: block;
+  font-family: 'Lobster', cursive;
 }
 
 .navbar-links li a:hover {
@@ -171,6 +174,7 @@ body {
   text-decoration: underline;
   margin: 2%;
   color: #252934;
+  font-family: 'Lobster', cursive;
 }
 
 .feature-container {
@@ -197,8 +201,8 @@ body {
   width: 80%;
 }
 
-#about-me{
-  padding-left: 4.05%;
+#experience-desc {
+  padding: 5%;
 }
 
 #portfolio {
@@ -207,7 +211,7 @@ body {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
-  height:auto;
+  height: auto;
 }
 
 .blog-link {
@@ -228,24 +232,25 @@ body {
   border: 3px solid rgb(0, 136, 255);
 }
 .project-btn-container {
-  margin-bottom: 6%;
+  margin-top: 5%;
+  margin-bottom: 3%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-size: large;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 370;
   cursor: pointer;
-  padding: 5px 2%;
-  border-radius: 3px;
+  padding: 0 2%;
+  transition: all 0.5s;
 }
 
 .portfolio-btn:hover {
-  background-color: #ea2c62c8;
-  color: white;
+  color: rgb(0, 136, 255);
+  text-decoration: 2px solid underline;
 }
 
 .hide {
@@ -261,8 +266,10 @@ body {
 }
 
 .selected {
-  background-color: rgb(0, 136, 255);
-  color: white;
+  /* background-color: rgb(0, 136, 255);
+  color: white; */
+  color: rgb(0, 136, 255);
+  text-decoration: 2px solid underline;
 }
 
 .sub-section a img {
@@ -274,45 +281,46 @@ body {
 .project-name {
   margin: 0;
   width: 100%;
+  color: rgb(36, 36, 36);
 }
 
 .highlighted-text {
   color: rgb(0, 136, 255);
 }
 
-.projects{
+.projects {
   width: 100vw;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-
-.card{
+.card {
   width: 300px;
   height: 400px;
   font-size: medium;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgb(163, 163, 163);
+  box-shadow: 0px 0px 5px rgb(163, 163, 163);
   margin-bottom: 2%;
   background-color: rgb(255, 255, 255);
+  transition: all 1.5s ease;
 }
 
-.card>div>a>img,
-.card>div>a>video{
+.card > div > a > img,
+.card > div > a > video {
   width: 300px;
- height: 200px;
+  height: 200px;
   border-radius: 5px 5px 0px 0px;
   object-fit: fill;
 }
-.card-img-container{
+.card-img-container {
   height: 200px;
   width: 300px;
   border-radius: 5px 5px 0px 0px;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.img-description{
+.img-description {
   width: 100%;
   height: 40%;
   border-radius: 5px;
@@ -320,15 +328,15 @@ body {
   padding: 0.5em;
 }
 
-.project-desc{
+.project-desc {
   font-size: 0.8em;
   line-height: 1.5em;
-  padding:1%;
+  padding: 1%;
   padding-top: 2%;
   margin: 0;
 }
 
-.demo-btn{
+.demo-btn {
   margin-left: 0.5em;
   margin-top: -0.5em;
   padding: 2% 4%;
@@ -340,19 +348,16 @@ body {
   border-radius: 2px;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
 .blog-img:hover,
-.blog-img:focus,
-.card a img:hover,
-.card a img:focus
-{
-  transform: scale(1.05);
+.blog-img:focus {
+  transform: scale(1.02);
 }
 
-.blog-img{
+.blog-img {
   width: 300px;
   height: 250px;
 }
@@ -379,6 +384,7 @@ body {
 .heading {
   margin: -1% 0px 4% 0px;
   text-decoration: underline;
+  font-family: 'Lobster', cursive;
 }
 
 .social {
@@ -398,6 +404,66 @@ footer {
   font-size: small;
   text-align: center;
   width: 100%;
+}
+
+.card {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+.card.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.feature-container {
+  opacity: 0;
+  transition: all 1.5s ease-in;
+}
+
+.feature-container.appear {
+  opacity: 1;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#job-count {
+  align-self: center;
+}
+
+#designation {
+  color: #424242;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-shadow: 0px 0px 1px rgb(0, 136, 255);
+}
+
+#company {
+  font-size: 1.2em;
+  color: rgb(36, 36, 36);
+}
+
+#timeline {
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+#tasks > li {
+  list-style: url('./images/double-right.svg');
+}
+
+#about-me {
+  line-height: 1.5em;
 }
 
 @media (max-width: 600px) {
@@ -460,47 +526,37 @@ footer {
   .img-description {
     line-height: normal;
     width: 100%;
-    padding:0.5em;
+    padding: 0.5em;
     /* margin-left: 0.5em; */
   }
 
-  /* #about-me{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  } */
-  #about-me{
-    display: none;
-  }
   .feature-container i,
   h2 {
     font-size: 1.5em;
   }
 
-  .card{
+  .card {
     margin-bottom: 5%;
   }
-  .blog-img-desc{
+  .blog-img-desc {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    
   }
 
   .blog-img-desc a {
     width: 100vw;
   }
 
-  .blog-img-desc a .blog-img{
+  .blog-img-desc a .blog-img {
     width: 350px;
     height: 250px;
   }
 
-  #contact{
+  #contact {
     height: 30vh;
   }
 }
-
 
 @media (max-width: 400px) {
   #logo {
@@ -536,7 +592,7 @@ footer {
     margin-left: 0.5em;
   }
 
-  .blog-img{
+  .blog-img {
     width: 300;
     height: 200px;
   }

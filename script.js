@@ -1,6 +1,23 @@
+var experience = {
+  designation: ['Associate Engineer', 'Software Developer (Freelance)', 'Software Developer (Freelance)', 'Solarwinds Administrator'],
+  company: ['Successive Technologies Pvt Ltd', 'Sci-Bi Software Systems', 'Aquintis Pharma', 'Tata Consultancy Services'],
+  timeline: ['March 2021 - Present', 'Jan - Mar 2021', 'Nov - Dec 2020', 'Jun 2019 - Mar 2021'],
+  tasks: [[
+    'Built frontend with React and Typescript',
+    'Used Redux for state management',
+    'Used best practices while coding for better maintainability and readability of codebase'], [
+    'Developed front - end by building analytical charts and dashboards using React.js, Ag - Grid and Google Charts',
+    'Developed back - end by integrating AWS auth with the application and used AWS Cognito API to build Admin console for enabling / disabling user accounts and modifying user access to back - end resources like S3 buckets',
+  ], ['Built a profile website for the pharmaceutical company',
+    'Delivered the project within 2 months',
+    'Tech stack: HTML, CSS, JavaScript'], ['Configured linux and windows servers, URLs, network devices and applications for availability and resource utilization monitoring by using NPM, NCM and SAM modules of Solarwinds Cloud Monitoring Tool',
+    'Configured email and ServiceNow incident alerts for when devices or applications cross client - specified resource utilization thresholds',
+    'Configured network devices like firewalls to daily backups of running and startup configs']],
+
+}
+
 var mernProjectList = {
   names: [
-
     "Amazon Clone",
     "Google Keep Clone",
     "Visualizr",
@@ -24,7 +41,6 @@ var mernProjectList = {
   ],
 
   tech: [
-
     "<span class='highlighted-text'>Clone of Amazon e-commerce</span>  website using ReactJS and Firebase Auth",
     "Clone of Google's Note taking app 'Google Keep' using ReactJS. With <span class='highlighted-text'>theme that defaults to system's theme(Light/Dark)</span>.",
     "ReactJS app to <span class='highlighted-text'>visualize the runtime of different algorithms based on user input.</span> Algorithms for searching,sorting, optimizes arithmetic.",
@@ -44,7 +60,7 @@ var vanillaProjectsList = {
     "https://just-kidding.netlify.app/",
     "https://gradientgenerator.netlify.com",
     "https://vikasexpense.netlify.com",
-    "https://clickmusic.netlify.com/",
+    // "https://clickmusic.netlify.com/",
   ],
 
   images: [
@@ -52,7 +68,7 @@ var vanillaProjectsList = {
     "/images/joker.webm",
     "images/gradient.webm",
     "images/expense.webm",
-    "images/music.webm",
+    // "images/music.webm",
   ],
 
   tech: [
@@ -60,7 +76,7 @@ var vanillaProjectsList = {
     "A joke generating app which displays joke fetched from an API. Used HTML5, CSS, Javascript and an API",
     "Linear gradient generator web app. Let you choose colours for the gradient and copy the code with just one click. Used HTML5, CSS and Javascript",
     "An expense management web app using HTML5, CSS, Javascript and Bootstrap. Takes in amount spent and item/service bought.",
-    "Music generator web app. Plays audio on listening to clicks on different coloured scales. Used HTML5, CSS and Javascript.",
+    // "Music generator web app. Plays audio on listening to clicks on different coloured scales. Used HTML5, CSS and Javascript.",
   ],
 };
 
@@ -94,6 +110,42 @@ var otherProjectList = {
   ],
 };
 
+// reveal cards on scroll
+window.addEventListener('scroll', revealIn);
+function revealIn() {
+  var features = document.querySelectorAll('.feature-container');
+  for (let i = 0; i < features.length; i++) {
+    let windowHeight = window.innerHeight;
+    let featureTop = features[i].getBoundingClientRect().top;
+    let featurePoint = 50;
+
+    if (featureTop < windowHeight - featurePoint) {
+      features[i].classList.add('appear');
+    }
+    else {
+      features[i].classList.remove('appear');
+
+    }
+  }
+}
+
+
+window.addEventListener('scroll', revealUp);
+function revealUp() {
+  var cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    let windowHeight = window.innerHeight;
+    let cardTop = card.getBoundingClientRect().top;
+    let cardPoint = 50;
+
+    if (cardTop < windowHeight - cardPoint) {
+      card.classList.add('active');
+    }
+    else {
+      card.classList.remove('active');
+    }
+  })
+}
 
 
 // Copyright text in footer
@@ -119,7 +171,50 @@ for (var i = 0; i < navLI.length; i++) {
   });
 }
 
+//Experience
 
+function addExperience(curr) {
+  const counter = document.querySelector('#job-count');
+  counter.innerText = curr + 1;
+  const designation = document.querySelector('#designation');
+  designation.innerText = experience.designation[curr];
+  const company = document.querySelector('#company');
+  company.innerText = experience.company[curr];
+  const timeline = document.querySelector('#timeline');
+  timeline.innerText = experience.timeline[curr];
+  const tasks = document.querySelector('#tasks');
+  tasks.innerHTML = ''
+  experience.tasks[curr].forEach(task =>
+    tasks.innerHTML += `<li>${task}</li>`
+  );
+}
+window.addEventListener('load', addExperience(0))
+
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+var curr = 0;
+next.addEventListener('click', nextExp);
+prev.addEventListener('click', prevExp);
+
+function nextExp() {
+  if (curr < experience.designation.length - 1) {
+    curr++;
+  }
+  else {
+    curr = 0;
+  }
+  addExperience(curr);
+}
+
+function prevExp() {
+  if (curr > 0) {
+    curr--;
+  }
+  else {
+    curr = experience.designation.length - 1;
+  }
+  addExperience(curr);
+}
 
 // MERN projects
 const mernButton = document.querySelector(".mern");
@@ -135,12 +230,12 @@ for (let i = 0; i < mernProjectList.links.length; i++) {
   href=${mernProjectList.links[i]}
   target="_blank"
   >
-  ${ !mernProjectList.images[i].endsWith('webm') ? 
-  `<img  src=${mernProjectList.images[i]} alt=${mernProjectList.names[i]}/>`
-  : `<video  autoplay loop>
+  ${!mernProjectList.images[i].endsWith('webm') ?
+      `<img  src=${mernProjectList.images[i]} alt=${mernProjectList.names[i]}/>`
+      : `<video  autoplay loop>
   <source src=${mernProjectList.images[i]} type="video/webm">
   </video>`
-}
+    }
 </a>
 </div>
 <div class="img-description">
@@ -176,11 +271,11 @@ for (let i = 0; i < vanillaProjectsList.links.length; i++) {
   href=${vanillaProjectsList.links[i]}
   target="_blank"
 >
-${ !vanillaProjectsList.images[i].endsWith('webm') ? 
-`<img  loading="lazy" src=${vanillaProjectsList.images[i]}  alt=${vanillaProjectsList.names[i]}/>` : `<video  autoplay loop>
+${!vanillaProjectsList.images[i].endsWith('webm') ?
+      `<img  loading="lazy" src=${vanillaProjectsList.images[i]}  alt=${vanillaProjectsList.names[i]}/>` : `<video  autoplay loop>
   <source src=${vanillaProjectsList.images[i]} type="video/webm">
   </video>`
-}
+    }
 </a>
 </div>
 <div class="img-description">
@@ -270,7 +365,6 @@ otherButton.addEventListener('click', () => {
   mernButton.classList.remove('selected');
   jsButton.classList.remove('selected');
 })
-
 
 
 

@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.min.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       rel="shortcut icon"
       href="./images/logo-min.jpg"
@@ -90,24 +90,54 @@
         </div>
       </div>
       <!-- </section> -->
-      <section class="sub-section" id="about-me">
-        <img
-          id="profile-pic"
-          src="./images/profile-pic.jpg"
-          alt="profile picture"
-        />
-        <div class="img-description">
-          <p>
-            I am a <strong class="highlighted-text">M.E.R.N</strong> stack
-            developer.<br />
-            Currently situated in
-            <strong class="highlighted-text">Noida</strong>, Uttar Pradesh, India.<br />
-            I am an <strong class="highlighted-text">M.Tech</strong> in CSE from
-            Amity University, Noida.<br />
-            <a href="#contact">Contact me</a> if you are interested in hiring
-            me.<br />
-            I will be looking forward to conversing with you.
-          </p>
+      <section class="container-section" id="about-me">
+        <div class="section-heading">Experience</div>
+        <div class="project-btn-container">
+          <button id="prev" class="portfolio-btn btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chevron-double-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <span id="job-count"></span>
+          <button id="next" class="portfolio-btn btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chevron-double-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="experience-desc">
+          <div id="designation"></div>
+          <div id="company"></div>
+          <span id="timeline"></span>
+          <ul id="tasks"></ul>
         </div>
       </section>
     </section>
@@ -116,9 +146,9 @@
     <section class="container-section" id="portfolio">
       <div class="section-heading">Projects</div>
       <div class="project-btn-container">
-        <span class="portfolio-btn mern selected">REACT</span>
-        <span class="portfolio-btn javascript">JAVASCRIPT</span>
-        <span class="portfolio-btn other">OTHER</span>
+        <span class="portfolio-btn mern selected">React</span>
+        <span class="portfolio-btn javascript">Javascript</span>
+        <span class="portfolio-btn other">Other</span>
       </div>
       <section class="projects mern-section flex"></section>
       <section class="projects js-section hide"></section>
@@ -144,9 +174,9 @@
         </a>
         <div class="img-description">
           <p>
-            Here, I share all my knowledge
-            of javascript with the world. Using simple examples I explain
-            various new and old simple and complex Javascript concepts
+            Here, I share all my knowledge of javascript with the world. Using
+            simple examples I explain various new and old simple and complex
+            Javascript concepts
           </p>
         </div>
       </section>
@@ -175,7 +205,7 @@
         <a
           class="social github"
           href="https://www.github.com/vikas2426"
-          target="_blank"
+          target="_top"
         >
           <i class="fa fa-github-square" aria-hidden="true"></i>
         </a>
@@ -188,10 +218,10 @@
       <p class="social email-id">Email : vikas.cby@gmail.com</p>
       <footer></footer>
     </section>
-    <script src="./script.min.js"></script>
+    <script src="./script.js"></script>
     <script
-    src="https://kit.fontawesome.com/0ecc3c2f59.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/0ecc3c2f59.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
