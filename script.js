@@ -1,7 +1,7 @@
 var experience = {
   designation: ['Associate Engineer', 'Software Developer (Freelance)', 'Software Developer (Freelance)', 'Solarwinds Administrator'],
   company: ['Successive Technologies Pvt Ltd', 'Sci-Bi Software Systems', 'Aquintis Pharma', 'Tata Consultancy Services'],
-  timeline: ['March 2021 - Present', 'Jan - Mar 2021', 'Nov - Dec 2020', 'Jun 2019 - Mar 2021'],
+  timeline: ['Mar 2021 - Present', 'Jan - Mar 2021', 'Nov - Dec 2020', 'Jun 2019 - Mar 2021'],
   tasks: [[
     'Built frontend with React and Typescript',
     'Used Redux for state management',
@@ -181,7 +181,7 @@ function addExperience(curr) {
   const company = document.querySelector('#company');
   company.innerText = experience.company[curr];
   const timeline = document.querySelector('#timeline');
-  timeline.innerText = experience.timeline[curr];
+  timeline.innerHTML = `<i>${experience.timeline[curr]}</i>`;
   const tasks = document.querySelector('#tasks');
   tasks.innerHTML = ''
   experience.tasks[curr].forEach(task =>

@@ -461,6 +461,7 @@ footer {
 
 #tasks > li {
   list-style: url('./images/double-right.svg');
+  margin-bottom: 1.5%;
 }
 
 #about-me {
@@ -469,6 +470,7 @@ footer {
 
 @media (max-width: 600px) {
   #experience-desc {
+    margin-left: 0;
     width: 95vw;
     padding: 5%;
   }
@@ -569,6 +571,7 @@ footer {
 
 @media (max-width: 400px) {
   #experience-desc {
+    margin-left: 0;
     width: 95vw;
     padding: 5%;
   }
