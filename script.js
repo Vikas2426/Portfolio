@@ -175,7 +175,7 @@ for (var i = 0; i < navLI.length; i++) {
 
 function addExperience(curr) {
   const counter = document.querySelector('#job-count');
-  counter.innerText = curr + 1;
+  counter.innerText = `${curr + 1} / ${experience.designation.length}`;
   const designation = document.querySelector('#designation');
   designation.innerText = experience.designation[curr];
   const company = document.querySelector('#company');
