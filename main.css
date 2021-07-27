@@ -412,6 +412,10 @@ body {
   font-size: 2rem;
   color: white;
 }
+
+.social a{
+  text-decoration: none;
+}
 .email-id {
   font-size: 1.5rem;
 }
@@ -618,6 +622,7 @@ footer {
 
   .container-section {
     height: auto;
+    padding-top: 7%
   }
   .sub-section {
     flex-direction: column;
