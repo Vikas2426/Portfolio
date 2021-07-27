@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.min.css" />
     <link
       rel="shortcut icon"
       href="./images/logo-min.jpg"
@@ -158,7 +158,7 @@
     <!-- Blog -->
 
     <section class="container-section" id="blog">
-      <div class="section-heading">Blog</div>
+      <div class="section-heading">Blogs</div>
       <section class="sub-section blog-img-desc">
         <a
           class="blog-link"
@@ -172,12 +172,18 @@
             loading="lazy"
           />
         </a>
-        <div class="img-description">
-          <p>
+        <div class="img-description" id='blog-links'>
+          <!-- <p>
             Here, I share all my knowledge of javascript with the world. Using
             simple examples I explain various new and old simple and complex
             Javascript concepts
-          </p>
+          </p> -->
+          <div class='blog'><a href="https://vikasjs-blog.netlify.app/hoisting/" target="_blank">Hoisting:</a> <i> Hoisting is not a feature, it is actually a side effect of...</i></div>
+          <div class='blog'><a href="https://vikasjs-blog.netlify.app/closure/" target="_blank">Closures:</a> <i> Closures are a phenomenon where an inner function remembers the...</i></div>
+          <div class='blog'><a href="https://vikasjs-blog.netlify.app/currying/" target="_blank">Currying:</a> <i> process of transforming a function with multiple arguments into a...</i></div>
+          <div class='blog'><a href="https://vikasjs-blog.netlify.app/arrow-functions/" target="_blank">Arrow Functions:</a> <i> one of the best features introduced in ES6, although at first glance...</i></div>
+
+        
         </div>
       </section>
     </section>
@@ -218,7 +224,7 @@
       <p class="social email-id">Email : vikas.cby@gmail.com</p>
       <footer></footer>
     </section>
-    <script src="./script.js"></script>
+    <script src="./script.min.mjs" type="module"></script>
     <script
       src="https://kit.fontawesome.com/0ecc3c2f59.js"
       crossorigin="anonymous"

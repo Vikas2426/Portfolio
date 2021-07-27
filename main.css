@@ -137,6 +137,7 @@ body {
 
 .container-section {
   padding: 2%;
+  padding-top: 5%;
 }
 
 .sub-section {
@@ -226,7 +227,23 @@ body {
   line-height: 150%;
   padding: 2%;
 }
+ #blog-links{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   justify-content: center;
+   text-overflow: ellipsis;
+ }
 
+ .blog{
+   margin-bottom: 2%;
+ }
+
+ .blog>a{
+   background-color: aqua;
+   padding: 0.5%;
+   border-radius: 5px;
+ }
 #profile-pic {
   width: 30%;
   border-radius: 100em;
@@ -617,5 +634,11 @@ footer {
   .blog-img {
     width: 300;
     height: 200px;
+  }
+}
+
+@media (max-width: 800px){
+  .blog-img-desc{
+    flex-direction: column;
   }
 }
