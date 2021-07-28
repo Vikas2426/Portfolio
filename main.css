@@ -552,6 +552,11 @@ footer {
     width: 50%;
   }
 
+  .container-section {
+    height: auto;
+    padding-top: 7%
+  }
+
   .sub-section a img {
     width: 100%;
   }
