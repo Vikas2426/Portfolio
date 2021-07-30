@@ -4,23 +4,22 @@ import vanillaProjectsList from './vanillaProjects.mjs';
 import otherProjectList from './otherProjects.mjs';
 import createCards from './createCards.mjs';
 
-// reveal features on scroll
+// reveal experience Description on scroll
 window.addEventListener('scroll', revealIn);
 function revealIn() {
-  var features = document.querySelectorAll('.feature-container');
-  for (let i = 0; i < features.length; i++) {
+  var experienceDesc = document.querySelector('#experience-desc');
     let windowHeight = window.innerHeight;
-    let featureTop = features[i].getBoundingClientRect().top;
-    let featurePoint = 50;
+    let top = experienceDesc.getBoundingClientRect().top;
+    let point = 50;
 
-    if (featureTop < windowHeight - featurePoint) {
-      features[i].classList.add('appear');
+    if (top < windowHeight - point) {
+      experienceDesc.classList.add('appear');
     }
     else {
-      features[i].classList.remove('appear');
+      experienceDesc.classList.remove('appear');
 
     }
-  }
+  
 }
 
 // reveal cards on scroll
