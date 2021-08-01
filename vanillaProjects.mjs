@@ -5,8 +5,14 @@ export default {
     "Expense App",
     "Click Music",
   ],
+ githubLinks: [
 
-  links: [
+    "https://github.com/Vikas2426/joker",
+    "https://github.com/Vikas2426/background_generator.github.io",
+    "https://github.com/Vikas2426/ExpenseAPP",
+    // "https://clickmusic.netlify.com/",
+  ],
+  demoLinks: [
 
     "https://just-kidding.netlify.app/",
     "https://gradientgenerator.netlify.com",

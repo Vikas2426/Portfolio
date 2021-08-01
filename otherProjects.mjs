@@ -6,7 +6,14 @@ export default {
 
   ],
 
-  links: [
+   githubLinks: [
+    "https://github.com/Vikas2426/Internship",
+    "https://github.com/Vikas2426/Machine-Learning-Projects",
+    "https://github.com/Vikas2426/Python-Programs/blob/master/DinosaurBot.ipynb",
+
+  ],
+
+  demoLinks: [
     "https://github.com/Vikas2426/Internship",
     "https://github.com/Vikas2426/Machine-Learning-Projects",
     "https://github.com/Vikas2426/Python-Programs/blob/master/DinosaurBot.ipynb",
