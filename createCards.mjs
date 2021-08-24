@@ -9,8 +9,8 @@ export default function createCards(projectList, section) {
   target="_blank"
   >
   ${!projectList.images[i].endsWith('webm') ?
-      `<img  src=${projectList.images[i]} alt=${projectList.names[i]}/>`
-      : `<video  autoplay loop>
+      `<img class='skeleton' src=${projectList.images[i]} alt=${projectList.names[i]}/>`
+      : `<video class='skeleton' autoplay loop>
   <source src=${projectList.images[i]} type="video/webm">
   </video>`
     }
