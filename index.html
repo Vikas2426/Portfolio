@@ -1,250 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:image"
-      content="https://github.com/Vikas2426/Portfolio/blob/master/images/portfolio.jpg?raw=true"
-    />
-    <meta property="og:url" content="https://vikasresume.netlify.app" />
-    <meta property="og:title" content="Vikas Choubey's Portfolio" />
-    <meta
-      property="og:description"
-      content="Vikas is a fullstack web developer with expertise in Javascript, NodeJS and React, he also blogs about his Javascript knowledge and  shares it with the community.This portfolio contains description of all projects he has worked on, his blogs and his web development journey so far. Open this link and have a look at his portfolio, github and linkedin"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.min.css" />
-    <link
-      rel="shortcut icon"
-      href="./images/logo-min.jpg"
-      type="image/x-icon"
-    />
-    <title>Vikas Choubey</title>
-  </head>
-  <body>
-    <div id="page-container">
-<div id="content-wrap">
-    <!-- navbar -->
-    <nav class="navbar">
-      <img id="logo" src="./images/logo-min.jpg" alt="logo" />
-      <div class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="#landing">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li>
-            <a href="#blog">Blog</a>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- landing -->
-    <section class="landing" id="landing">
-      <div class="header-content">
-        <div class="text">
-          Welcome, I'm <span id="highlight-name">Vikas Choubey</span>.<br />
-          Full-stack web developer @ Successive Technologies, Noida.
-        </div>
-        <a href="#about"
-          ><div class="button page-link">Checkout my work</div></a
-        >
-      </div>
-   <div class="wave">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div>
-    </section>
 
-    <!-- about -->
-    <section class="container-section" id="about">
-     
-      <div class="section-heading">I build web apps</div>
-      <!-- <section class="web-feature-section"> -->
-      <div id="about-websites">
-        <div class="two-features">
-          <div class="feature-container">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-            <h2 class="feature-name">Fast</h2>
-            <p class="feature-desc">Fast loading, lag-free websites</p>
-          </div>
-          <div class="feature-container">
-            <i class="fa fa-window-restore" aria-hidden="true"></i>
-            <h2 class="feature-name">Responsive</h2>
-            <p class="feature-desc">Wesbites beautiful on all screen sizes</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image"
+    content="https://github.com/Vikas2426/Portfolio/blob/master/images/portfolio.jpg?raw=true" />
+  <meta property="og:url" content="https://vikasresume.netlify.app" />
+  <meta property="og:title" content="Vikas Choubey's Portfolio" />
+  <meta property="og:description"
+    content="Vikas is a fullstack web developer with expertise in Javascript, NodeJS and React, he also blogs about his Javascript knowledge and  shares it with the community.This portfolio contains description of all projects he has worked on, his blogs and his web development journey so far. Open this link and have a look at his portfolio, github and linkedin" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.min.css" />
+  <link rel="shortcut icon" href="./images/logo-min.jpg" type="image/x-icon" />
+  <title>Vikas Choubey</title>
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <!-- navbar -->
+      <nav class="navbar">
+        <img id="logo" src="./images/logo-min.jpg" alt="logo" />
+        <div class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <div class="two-features">
-          <div class="feature-container">
-            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-            <h2 class="feature-name">Intuitive</h2>
-            <p class="feature-desc">Easy to understand and use UX/UI</p>
-          </div>
-          <div class="feature-container">
-            <i class="fa fa-server" aria-hidden="true"></i>
-            <h2 class="feature-name">Dynamic</h2>
-            <p class="feature-desc">Dynamic websites, as per requirement.</p>
-          </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-      </div>
-      <!-- </section> -->
-      <section class="container-section" id="about-me">
-        <div class="section-heading">Experience</div>
-        <div class="project-btn-container">
-          <button id="prev" class="portfolio-btn btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-chevron-double-left"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-              />
-            </svg>
-          </button>
-          <span id="job-count"></span>
-          <button id="next" class="portfolio-btn btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-chevron-double-right"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-          </button>
+      </nav>
+      <!-- landing -->
+      <section class="landing" id="landing">
+        <div class="header-content">
+          <div class="text">
+            Welcome, I'm <span id="highlight-name">Vikas Choubey</span>.<br />
+            Full-stack web developer @ Successive Technologies, Noida.
+          </div>
+          <a href="#about">
+            <div class="button page-link">Checkout my work</div>
+          </a>
         </div>
-        <div id="experience-desc">
-          <div id="designation"></div>
-          <div id="company"></div>
-          <span id="timeline"></span>
-          <ul id="tasks"></ul>
+        <div class="wave">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"></path>
+          </svg>
         </div>
       </section>
-    </section>
 
-    <!-- portfolio -->
-    <section class="container-section bg-color-blue" id="portfolio">
-      <div class="portfolio-waves-top">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-    </svg>
-</div>
-      <div class="section-heading">Projects</div>
-      <div class="project-btn-container">
-        <span class="portfolio-btn mern selected">React</span>
-        <span class="portfolio-btn javascript">Javascript</span>
-        <span class="portfolio-btn other">Other</span>
-      </div>
-      <section class="projects mern-section flex"></section>
-      <section class="projects js-section hide"></section>
-      <section class="projects other-section hide"></section>
-  <div class="portfolio-waves-bottom">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-    </svg>
-</div>
-    </section>
+      <!-- about -->
+      <section class="container-section" id="about">
 
-    <!-- Blog -->
+        <div class="section-heading">I build web apps</div>
+        <!-- <section class="web-feature-section"> -->
+        <div id="about-websites">
+          <div class="two-features">
+            <div class="feature-container">
+              <i class="fa fa-rocket" aria-hidden="true"></i>
+              <h2 class="feature-name">Fast</h2>
+              <p class="feature-desc">Fast loading, lag-free websites</p>
+            </div>
+            <div class="feature-container">
+              <i class="fa fa-window-restore" aria-hidden="true"></i>
+              <h2 class="feature-name">Responsive</h2>
+              <p class="feature-desc">Wesbites beautiful on all screen sizes</p>
+            </div>
+          </div>
+          <div class="two-features">
+            <div class="feature-container">
+              <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+              <h2 class="feature-name">Intuitive</h2>
+              <p class="feature-desc">Easy to understand and use UX/UI</p>
+            </div>
+            <div class="feature-container">
+              <i class="fa fa-server" aria-hidden="true"></i>
+              <h2 class="feature-name">Dynamic</h2>
+              <p class="feature-desc">Dynamic websites, as per requirement.</p>
+            </div>
+          </div>
+        </div>
+        <!-- </section> -->
+        <section class="container-section" id="about-me">
+          <div class="section-heading">Experience</div>
+          <div class="project-btn-container">
+            <button id="prev" class="portfolio-btn btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                <path fill-rule="evenodd"
+                  d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+              </svg>
+            </button>
+            <span id="job-count"></span>
+            <button id="next" class="portfolio-btn btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                <path fill-rule="evenodd"
+                  d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </button>
+          </div>
+          <div id="experience-desc">
+            <div id="designation"></div>
+            <div id="company"></div>
+            <span id="timeline"></span>
+            <ul id="tasks"></ul>
+          </div>
+        </section>
+      </section>
 
-    <section class="container-section" id="blog">
-      <div class="section-heading">Blogs</div>
-      <section class="sub-section blog-img-desc">
-        <a
-          class="blog-link"
-          href="https://vikasjs-blog.netlify.app"
-          target="_blank"
-        >
-          <img
-            class="blog-img skeleton"
-            src="./images/js-blog-min.jpg"
-            alt="blog-image"
-            loading="lazy"
-          />
-        </a>
-        <div class="img-description" id='blog-links'>
-          <!-- <p>
+      <!-- portfolio -->
+      <section class="container-section bg-color-blue" id="portfolio">
+        <div class="portfolio-waves-top">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25" class="shape-fill"></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5" class="shape-fill"></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+        <div class="section-heading">Projects</div>
+        <div class="project-btn-container">
+          <span class="portfolio-btn mern selected">React</span>
+          <span class="portfolio-btn javascript">Vanilla Javascript</span>
+          <span class="portfolio-btn other">Other</span>
+        </div>
+        <section class="projects mern-section flex"></section>
+        <section class="projects js-section hide"></section>
+        <section class="projects other-section hide"></section>
+        <div class="portfolio-waves-bottom">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25" class="shape-fill"></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5" class="shape-fill"></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Blog -->
+
+      <section class="container-section" id="blog">
+        <div class="section-heading">Blogs</div>
+        <section class="sub-section blog-img-desc">
+          <a class="blog-link" href="https://vikasjs-blog.netlify.app" target="_blank">
+            <img class="blog-img skeleton" src="./images/js-blog-min.jpg" alt="blog-image" loading="lazy" />
+          </a>
+          <div class="img-description" id='blog-links'>
+            <!-- <p>
             Here, I share all my knowledge of javascript with the world. Using
             simple examples I explain various new and old simple and complex
             Javascript concepts
           </p> -->
-          <div class='blog'><a href="https://vikasjs-blog.netlify.app/polyfills/" target="_blank">Polyfill:</a> <i> Polyfill is an implementation of a feature, which developers need to do when...</i></div>
-          <div class='blog'><a href="https://vikasjs-blog.netlify.app/Debounce%20&%20Throttling/" target="_blank">Debouncing & Throttling:</a> <i> Improve performance of your apps by avoiding duplicate actions...</i></div>
-          <div class='blog'><a href="https://vikasjs-blog.netlify.app/hoisting/" target="_blank">Hoisting:</a> <i> Hoisting is not a feature, it is actually a side effect of...</i></div>
-          <div class='blog'><a href="https://vikasjs-blog.netlify.app/closure/" target="_blank">Closures:</a> <i> Closures are a phenomenon where an inner function remembers the...</i></div>
-          <div class='blog'><a href="https://vikasjs-blog.netlify.app/currying/" target="_blank">Currying:</a> <i> process of transforming a function with multiple arguments into a...</i></div>
-          <div class='blog'><a href="https://vikasjs-blog.netlify.app/arrow-functions/" target="_blank">Arrow Functions:</a> <i> one of the best features introduced in ES6, although at first glance...</i></div>
-        </div>
+            <div class='blog'><a href="https://vikasjs-blog.netlify.app/polyfills/" target="_blank">Polyfill:</a> <i>
+                Polyfill is an implementation of a feature, which developers need to do when...</i></div>
+            <div class='blog'><a href="https://vikasjs-blog.netlify.app/Debounce%20&%20Throttling/"
+                target="_blank">Debouncing & Throttling:</a> <i> Improve performance of your apps by avoiding duplicate
+                actions...</i></div>
+            <div class='blog'><a href="https://vikasjs-blog.netlify.app/hoisting/" target="_blank">Hoisting:</a> <i>
+                Hoisting is not a feature, it is actually a side effect of...</i></div>
+            <div class='blog'><a href="https://vikasjs-blog.netlify.app/closure/" target="_blank">Closures:</a> <i>
+                Closures are a phenomenon where an inner function remembers the...</i></div>
+            <div class='blog'><a href="https://vikasjs-blog.netlify.app/currying/" target="_blank">Currying:</a> <i>
+                process of transforming a function with multiple arguments into a...</i></div>
+            <div class='blog'><a href="https://vikasjs-blog.netlify.app/arrow-functions/" target="_blank">Arrow
+                Functions:</a> <i> one of the best features introduced in ES6, although at first glance...</i></div>
+          </div>
+        </section>
       </section>
-    </section>
 
-    <!-- contact -->
-    <section id="contact" class='bg-color-blue'>
-      <div class="contact-arrow">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-    </svg>
-</div>
-      <h1 class="contact-heading heading">Contact Me</h1>
-      <div id="social-links">
-        <a
-          class="social linkedin"
-          href="https://www.linkedin.com/in/vikas-choubey/"
-          target="_blank"
-        ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a
-          class="social insta"
-          href="https://www.instagram.com/vikas.choubey/"
-          target="_blank"
-        ><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a
-          class="social github"
-          href="https://www.github.com/vikas2426"
-          target="_top"
-        ><i class="fa fa-github-square" aria-hidden="true"></i></a>
-        <a class="social email" href="mailto:vikas.cby@gmail.com" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-      </div>
-      <p class="social email-id">Email : vikas.cby@gmail.com</p>
-    </section>
-  </div>
+      <!-- contact -->
+      <section id="contact" class='bg-color-blue'>
+        <div class="contact-arrow">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+          </svg>
+        </div>
+        <h1 class="contact-heading heading">Contact Me</h1>
+        <div id="social-links">
+          <a class="social linkedin" href="https://www.linkedin.com/in/vikas-choubey/" target="_blank"><i
+              class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a class="social insta" href="https://www.instagram.com/vikas.choubey/" target="_blank"><i
+              class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="social github" href="https://www.github.com/vikas2426" target="_top"><i class="fa fa-github-square"
+              aria-hidden="true"></i></a>
+          <a class="social email" href="mailto:vikas.cby@gmail.com" target="_top"><i class="fa fa-envelope"
+              aria-hidden="true"></i></a>
+        </div>
+        <p class="social email-id">Email : vikas.cby@gmail.com</p>
+      </section>
+    </div>
     <footer class="bg-color-blue"></footer>
-</div>
-    <script src="./script.min.mjs" type="module"></script>
-    <script
-      src="https://kit.fontawesome.com/0ecc3c2f59.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <script src="./script.min.mjs" type="module"></script>
+  <script src="https://kit.fontawesome.com/0ecc3c2f59.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
