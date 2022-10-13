@@ -4,24 +4,6 @@ import vanillaProjectsList from './vanillaProjects.mjs';
 import otherProjectList from './otherProjects.mjs';
 import createCards from './createCards.mjs';
 
-// reveal experience Description on scroll
-window.addEventListener('scroll', revealIn);
-function revealIn() {
-  var experienceDesc = document.querySelector('#experience-desc');
-    let windowHeight = window.innerHeight;
-    let top = experienceDesc.getBoundingClientRect().top;
-    let point = 50;
-
-    if (top < windowHeight - point) {
-      experienceDesc.classList.add('appear');
-    }
-    else {
-      experienceDesc.classList.remove('appear');
-
-    }
-  
-}
-
 // reveal cards on scroll
 window.addEventListener('scroll', revealUp);
 function revealUp() {
@@ -66,48 +48,35 @@ for (var i = 0; i < navLI.length; i++) {
 
 //Experience
 
-function addExperience(curr) {
-  const counter = document.querySelector('#job-count');
-  counter.innerText = `${curr + 1} / ${experience.designation.length}`;
-  const designation = document.querySelector('#designation');
-  designation.innerText = experience.designation[curr];
-  const company = document.querySelector('#company');
-  company.innerText = experience.company[curr];
-  const timeline = document.querySelector('#timeline');
-  timeline.innerHTML = `<i>${experience.timeline[curr]}</i>`;
-  const tasks = document.querySelector('#tasks');
-  tasks.innerHTML = ''
-  experience.tasks[curr].forEach(task =>
-    tasks.innerHTML += `<li>${task}</li>`
-  );
+function addExperience() {
+  let exp = '';
+  for(let i=0; i< experience.designation.length; i++){
+    let tasks =
+      experience.tasks[i].map(task =>
+       `<li>${task}</li>`
+      )
+    tasks = tasks.join('\n');
+   exp += `<div class="timeline-container info">
+    <div class="timeline-icon">
+    <div>
+    <img src=${experience.images[i]} alt='company-logo' max-height='100%' max-width='100%'/>
+    </div>
+    </div>
+    <div class="timeline-body">
+        <h4 class="timeline-title">
+            <span class="badge">
+                <span class="designation">${experience.designation[i]}, ${experience.company[i]}</span>
+            </span>
+        </h4>
+        <ul class="tasks">${tasks}</ul>
+        <p class="timeline-subtitle">${experience.timeline[i]}</p>
+    </div>
+</div>`
+  }
+  const timeline = document.getElementsByClassName('timeline')[0];
+  timeline.innerHTML += exp;
 }
-window.addEventListener('load', addExperience(0))
-
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
-var curr = 0;
-next.addEventListener('click', nextExp);
-prev.addEventListener('click', prevExp);
-
-function nextExp() {
-  if (curr < experience.designation.length - 1) {
-    curr++;
-  }
-  else {
-    curr = 0;
-  }
-  addExperience(curr);
-}
-
-function prevExp() {
-  if (curr > 0) {
-    curr--;
-  }
-  else {
-    curr = experience.designation.length - 1;
-  }
-  addExperience(curr);
-}
+window.addEventListener('load', addExperience())
 
 // MERN projects
 const mernButton = document.querySelector(".mern");
