@@ -906,28 +906,33 @@ section{
 
 .parallax1 > use {
   animation: move-forever1 10s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
 }
+.parallax1 > use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+
 .parallax2 > use {
   animation: move-forever2 8s linear infinite;
-  &:nth-child(1) {
+}
+.parallax2 > use:nth-child(1) {
     animation-delay: -2s;
   }
-}
+
 .parallax3 > use {
   animation: move-forever3 6s linear infinite;
-  &:nth-child(1) {
+}
+.parallax3 > use:nth-child(1) {
     animation-delay: -2s;
   }
-}
+
 .parallax4 > use {
   animation: move-forever4 4s linear infinite;
-  &:nth-child(1) {
+}
+.parallax4 > use:nth-child(1) {
     animation-delay: -2s;
   }
-}
+
 @keyframes move-forever1 {
   0% {
     transform: translate(85px, 0%);
