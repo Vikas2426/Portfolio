@@ -53,6 +53,7 @@ body {
   font-weight: 200;
   padding: 3%;
   padding-bottom: 0;
+  z-index: 10;
 }
 
 #highlight-name {
@@ -341,12 +342,12 @@ body {
 .blog {
   margin-bottom: 2%;
 }
-
+/* 
 .blog>a {
   background-color: aqua;
   padding: 1%;
   border-radius: 5px;
-}
+} */
 
 .custom-shape-divider-bottom-1629733848 {
   position: absolute;
@@ -632,7 +633,6 @@ footer {
 
   .landing {
     height: auto;
-    padding: 30% 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -864,7 +864,7 @@ footer {
   margin-bottom: 1.4rem;
 }
 
-.designation, .resume  {
+.designation, .resume, .blog>a  {
   padding: 4px 8px;
   border-radius: 3px;
   font-size: 1em;
@@ -890,7 +890,7 @@ section{
   border-top: 1px solid white;
 }
 
-
+/* landing and experience divider animation */
 .editorial {
   display: block;
   width: 100%;
@@ -961,13 +961,10 @@ section{
   }
 }
 
-
-
-
-
+/* landing section animation */
 .area{
-  background: #4e54c8;  
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  background: #1c2064;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #1c2064);  
   width: 100%;
   height:100vh;
   
