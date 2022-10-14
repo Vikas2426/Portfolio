@@ -27,12 +27,14 @@ export default function createCards(projectList, section) {
   <div class='card-button-container'>
   <button class='card-button'>
   <a href='${projectList.githubLinks[i]}' target="_blank" class='demo-btn'>
+  <i class="fa fa-github-square" aria-hidden="true"></i>
   Code
   </a>
 </button>  
 <button class='card-button'>
 <a href='${projectList.demoLinks[i]}'target="_blank" class='demo-btn'>
 Live
+<i class="fas fa-external-link-alt" aria-hidden="true"></i>
 </a>
 </button>
 </div>
@@ -42,5 +44,3 @@ Live
   }
   section.innerHTML += projectDiv;
 }
-// <i class="fa fa-github-square" aria-hidden="true"></i>
-// <i class="fas fa-external-link-alt" aria-hidden="true"></i>
