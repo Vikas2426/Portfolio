@@ -990,9 +990,8 @@ section{
 
 /* Resume button glow effect */
 
-.glow {
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+.navbar-links .glow {
+  font-family: 'Times New Roman', Times, serif;
   color: #fff;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
