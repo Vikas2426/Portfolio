@@ -18,7 +18,7 @@ export default function createCards(projectList, section) {
 </div>
 
 <div class="img-description">
-<p class="project-name"><strong>${projectList.names[i]}</strong></p> 
+<p class="project-name">${projectList.names[i]}</p> 
   <p class="project-desc">
   ${projectList.tech[i]}
   </p>

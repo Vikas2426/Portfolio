@@ -1,26 +1,28 @@
-import experience from "./experience.mjs";
-import mernProjectList from "./mernProject.mjs";
-import vanillaProjectsList from './vanillaProjects.mjs';
-import otherProjectList from './otherProjects.mjs';
-import createCards from './createCards.mjs';
+import experience from "./experience.min.mjs";
+import mernProjectList from "./mernProject.min.mjs";
+import vanillaProjectsList from './vanillaProjects.min.mjs';
+import otherProjectList from './otherProjects.min.mjs';
+import createCards from './createCards.min.mjs';
 
-// reveal cards on scroll
-window.addEventListener('scroll', revealUp);
-function revealUp() {
-  var cards = document.querySelectorAll('.card');
-  cards.forEach(card => {
-    let windowHeight = window.innerHeight;
-    let cardTop = card.getBoundingClientRect().top;
-    let cardPoint = 50;
-
-    if (cardTop < windowHeight - cardPoint) {
-      card.classList.add('active');
-    }
-    else {
-      card.classList.remove('active');
-    }
-  })
+// animation
+function revealUp(container,elements, animationClass) {
+  let windowHeight = window.innerHeight;
+  let containerTop = container.getBoundingClientRect().top;
+  let diff = 100;
+  if (containerTop < windowHeight - diff) {
+    elements.forEach(element => {
+      element.classList.add(animationClass);
+    })
+  }
+  else {
+    elements.forEach(element => {
+      element.classList.remove(animationClass);
+    })
+  }
 }
+
+
+
 
 
 // Copyright text in footer
@@ -34,7 +36,7 @@ const toggleButton = document.querySelector(".toggle-button");
 const navLinks = document.querySelector(".navbar-links");
 
 toggleButton.addEventListener('click', () => {
-  navLinks.classList.toggle('active')
+  navLinks.classList.toggle('after-animation')
 });
 
 
@@ -42,7 +44,7 @@ const navLI = document.querySelectorAll('ul > *');
 
 for (var i = 0; i < navLI.length; i++) {
   navLI[i].addEventListener('click', () => {
-    navLinks.classList.toggle('active')
+    navLinks.classList.toggle('after-animation')
   });
 }
 
@@ -50,13 +52,13 @@ for (var i = 0; i < navLI.length; i++) {
 
 function addExperience() {
   let exp = '';
-  for(let i=0; i< experience.designation.length; i++){
+  for (let i = 0; i < experience.designation.length; i++) {
     let tasks =
       experience.tasks[i].map(task =>
-       `<li>${task}</li>`
+        `<li>${task}</li>`
       )
     tasks = tasks.join('\n');
-   exp += `<div class="timeline-container info">
+    exp += `<div class="timeline-container info">
     <div class="timeline-icon">
     <div>
     <img src=${experience.images[i]} alt='company-logo' max-height='100%' max-width='100%'/>
@@ -76,7 +78,12 @@ function addExperience() {
   const timeline = document.getElementsByClassName('timeline')[0];
   timeline.innerHTML += exp;
 }
-window.addEventListener('load', addExperience())
+addExperience();
+
+var timeline = document.querySelector('.timeline');
+var experiences = document.querySelectorAll('.timeline-container');
+window.addEventListener('scroll', ()=>revealUp(timeline, experiences, 'after-timeline-animation'));
+
 
 // MERN projects
 const mernButton = document.querySelector(".mern");
@@ -132,6 +139,12 @@ otherButton.addEventListener('click', () => {
   mernButton.classList.remove('selected');
   jsButton.classList.remove('selected');
 })
+
+// reveal cards on scroll
+var projectsSection = document.querySelectorAll('.projects')[0];
+var cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', ()=>revealUp(projectsSection, cards, "after-card-animation"));
+
 
 
 

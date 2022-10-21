@@ -62,17 +62,18 @@ body {
 }
 
 .header-content a {
-  border: 1px solid white;
-  padding: 1.5%;
+  padding: 2%;
   font-size: 1rem;
   margin-top: 10%;
   text-decoration: none;
+  border-radius: 5px;
+  background-color: var(--info);
   color: white;
-  border-radius: 2px;
+  text-shadow: var(--timeline-body-shadow);
 }
 
 .header-content a:hover {
-  background-color: #ea2c62b2;
+  background-color: var(--infor-darker);
 }
 
 #logo {
@@ -216,7 +217,6 @@ body {
 }
 
 .img-description {
-  color: #252934c3;
   width: 60%;
   font-size: 1.1em;
   line-height: 150%;
@@ -303,6 +303,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   align-content: center;
   justify-items: center;
+  overflow-x: scroll;
 }
 
 
@@ -315,7 +316,8 @@ body {
 .project-name {
   margin: 0;
   width: 100%;
-  color: rgb(48, 48, 48);
+  font-weight: 100;
+  
 }
 
 .highlighted-text {
@@ -328,15 +330,14 @@ body {
 }
 
 .card {
-  background-color: rgb(255, 255, 255);
   width: 300px;
   height: 400px;
   font-size: medium;
   border-radius: 5px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.877);
-  transition: all 0.5s ease;
   overflow: hidden;
   z-index: 9;
+ background-color: var(--timeline-body-bg);
+ box-shadow: var(--timeline-body-shadow);
 }
 
 .card>div>a>img,
@@ -390,7 +391,6 @@ body {
   width: 100%;
   padding: 3% 0;
   text-align: center;
-  /* border-top: 3px solid rgb(0, 136, 255); */
   color: white;
 }
 
@@ -451,25 +451,35 @@ footer {
   padding: 2%;
 }
 
-.card {
+.card{
   position: relative;
-  transform: translateY(50px);
+  transform: translateY(100px);
   opacity: 0;
-  transition: all 1.2s ease;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
 }
 
-.card.active {
+.card.after-card-animation{
   transform: translateY(0px);
   opacity: 1;
 }
 
-#experience-desc {
-  opacity: 0;
-  transition: all 1.5s ease-in;
+.projects:first-child(1){
+  transition-delay: 100ms;
+
 }
 
-#experience-desc.appear {
-  opacity: 1;
+.projects:nth-child(2){
+  transition-delay: 200ms;
+  
+}
+.projects:nth-child(3){
+  transition-delay: 300ms;
+  
+}
+.projects:last-child(4){
+  transition-delay: 400ms;
 }
 
 .btns {
@@ -657,10 +667,15 @@ footer {
 
 :root {
   --info: #0dcff1;
+  --infor-darker: #0ab0cd;
   --timeline-before-bg: #222a42;
   --timeline-body-bg: #27293d;
   --timeline-body-round: 3px;
   --timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, .1);
+}
+
+.about{
+  overflow-x: hidden;
 }
 
 .experience-container {
@@ -673,7 +688,6 @@ footer {
   padding-left: 4rem;
   margin: 0 0 0 30px;
   color: white;
-
 }
 
 .timeline:before {
@@ -689,16 +703,37 @@ footer {
 .timeline .timeline-container {
   position: relative;
   margin-bottom: 2.5rem;
-  ;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 2s ease
 }
 
+.timeline-container.after-timeline-animation{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.timeline-container:nth-child(2), .card:nth-child(2){
+  transition-delay: 200ms;
+}
+.timeline-container:nth-child(3), .card:nth-child(3){
+  transition-delay: 400ms;
+}
+.timeline-container:nth-child(4), .card:nth-child(4){
+  transition-delay: 600ms;
+}
+.timeline-container:nth-child(5), .card:nth-child(5){
+  transition-delay: 800ms;
+}
+.timeline-container:nth-child(6), .card:nth-child(6){
+  transition-delay: 1000ms;
+}
 .timeline .timeline-container .timeline-icon {
   position: absolute;
   left: -3em;
   top: -0.7em;
   width: 3em;
   height: 3em;
-  /* border-radius: 50%; */
   text-align: center;
   font-size: 2.5rem;
   background: var(--secondary);
@@ -974,9 +1009,9 @@ section{
 
 .card-button{
   width: 47%;
-  background-color:rgb(93, 180, 252);
+  background-color: var(--info);
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 0.2em;
   border-radius: 5%;
 }
@@ -984,7 +1019,8 @@ section{
   background-color:rgb(42, 159, 255);
 }
 .demo-btn {
-  color: black;
+  color: rgb(65,65,65);
+  font-weight: 600;
   text-decoration: none;
 }
 
