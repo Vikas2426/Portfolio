@@ -455,14 +455,28 @@ footer {
   position: relative;
   transform: translateY(100px);
   opacity: 0;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease;
+  transition: all 1s ease;
 }
 
 .card.after-card-animation{
   transform: translateY(0px);
   opacity: 1;
+}
+
+.card:nth-child(2){
+  transition-delay: 200ms;
+}
+.card:nth-child(3){
+  transition-delay: 400ms;
+}
+.card:nth-child(4){
+  transition-delay: 600ms;
+}
+.card:nth-child(5){
+  transition-delay: 800ms;
+}
+.card:nth-child(6){
+  transition-delay: 1000ms;
 }
 
 .projects:first-child(1){
@@ -705,7 +719,7 @@ footer {
   margin-bottom: 2.5rem;
   transform: translateX(-50%);
   opacity: 0;
-  transition: all 2s ease
+  transition: all 0.7s ease
 }
 
 .timeline-container.after-timeline-animation{
@@ -713,21 +727,6 @@ footer {
   opacity: 1;
 }
 
-.timeline-container:nth-child(2), .card:nth-child(2){
-  transition-delay: 200ms;
-}
-.timeline-container:nth-child(3), .card:nth-child(3){
-  transition-delay: 400ms;
-}
-.timeline-container:nth-child(4), .card:nth-child(4){
-  transition-delay: 600ms;
-}
-.timeline-container:nth-child(5), .card:nth-child(5){
-  transition-delay: 800ms;
-}
-.timeline-container:nth-child(6), .card:nth-child(6){
-  transition-delay: 1000ms;
-}
 .timeline .timeline-container .timeline-icon {
   position: absolute;
   left: -3em;

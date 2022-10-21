@@ -4,27 +4,6 @@ import vanillaProjectsList from './vanillaProjects.min.mjs';
 import otherProjectList from './otherProjects.min.mjs';
 import createCards from './createCards.min.mjs';
 
-// animation
-function revealUp(container,elements, animationClass) {
-  let windowHeight = window.innerHeight;
-  let containerTop = container.getBoundingClientRect().top;
-  let diff = 100;
-  if (containerTop < windowHeight - diff) {
-    elements.forEach(element => {
-      element.classList.add(animationClass);
-    })
-  }
-  else {
-    elements.forEach(element => {
-      element.classList.remove(animationClass);
-    })
-  }
-}
-
-
-
-
-
 // Copyright text in footer
 const footer = document.querySelector("footer");
 const year = new Date().getFullYear();
@@ -80,9 +59,19 @@ function addExperience() {
 }
 addExperience();
 
-var timeline = document.querySelector('.timeline');
+// reveal right animation
 var experiences = document.querySelectorAll('.timeline-container');
-window.addEventListener('scroll', ()=>revealUp(timeline, experiences, 'after-timeline-animation'));
+function revealRight() {
+  let windowHeight = window.innerHeight;
+  experiences.forEach(experience=>{
+    let experienceTop = experience.getBoundingClientRect().top;
+    let diff = 50;
+    if (experienceTop < windowHeight - diff) {
+      experience.classList.add('after-timeline-animation');
+  }
+})
+}
+window.addEventListener('scroll', revealRight);
 
 
 // MERN projects
@@ -143,7 +132,20 @@ otherButton.addEventListener('click', () => {
 // reveal cards on scroll
 var projectsSection = document.querySelectorAll('.projects')[0];
 var cards = document.querySelectorAll('.card');
-window.addEventListener('scroll', ()=>revealUp(projectsSection, cards, "after-card-animation"));
+
+function revealUp() {
+  let windowHeight = window.innerHeight;
+  let projectsSectionTop = projectsSection.getBoundingClientRect().top;
+  let diff = 100;
+  if (projectsSectionTop < windowHeight - diff) {
+    cards.forEach(card => {
+      card.classList.add("after-card-animation");
+    })
+    window.removeEventListener('scroll', revealUp);
+  }
+}
+
+window.addEventListener('scroll', revealUp);
 
 
 
