@@ -15,7 +15,7 @@ const toggleButton = document.querySelector(".toggle-button");
 const navLinks = document.querySelector(".navbar-links");
 
 toggleButton.addEventListener('click', () => {
-  navLinks.classList.toggle('after-animation')
+  navLinks.classList.toggle('active')
 });
 
 
@@ -23,7 +23,7 @@ const navLI = document.querySelectorAll('ul > *');
 
 for (var i = 0; i < navLI.length; i++) {
   navLI[i].addEventListener('click', () => {
-    navLinks.classList.toggle('after-animation')
+    navLinks.classList.toggle('active')
   });
 }
 
