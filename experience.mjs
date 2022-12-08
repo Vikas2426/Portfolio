@@ -1,6 +1,6 @@
 export default {
   designation: ['Software Engineer', 'Associate Engineer', 'Software Developer (Freelance)', 'Software Developer (Freelance)', 'Associate Systems Engineer', 'Data Science Intern'],
-  company: ['Trantor Software Pvt Ltd', 'Successive Technologies Pvt Ltd', 'Sci-Bi Software Systems', 'Aquintis Pharma', 'Tata Consultancy Services', 'Lambda Vision IXXO.IO'],
+  company: ['Confidential', 'Successive Technologies Pvt Ltd', 'Sci-Bi Software Systems', 'Aquintis Pharma', 'Tata Consultancy Services', 'Lambda Vision IXXO.IO'],
   timeline: ['Oct 2022 - present', 'Mar 2021 - Sept 2022', 'Jan - Mar 2021', 'Nov - Dec 2020', 'Jun 2019 - Mar 2021', 'Mar - Apr 2019'],
   tasks: [[
     'Built frontend with React and Typescript',
