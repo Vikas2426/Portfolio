@@ -93,7 +93,7 @@ createCards(otherProjectList, otherSection);
 
 // display only MERN projects
 mernButton.addEventListener('click', () => {
-  mernSection.style.display = 'flex';
+  mernSection.style.display = 'grid';
   mernButton.classList.add('selected');
 
   jsSection.style.display = 'none';
@@ -106,7 +106,7 @@ mernButton.addEventListener('click', () => {
 // display only Javascript projects
 
 jsButton.addEventListener('click', () => {
-  jsSection.style.display = 'flex';
+  jsSection.style.display = 'grid';
   jsButton.classList.add('selected');
 
   mernSection.style.display = 'none';
@@ -119,7 +119,7 @@ jsButton.addEventListener('click', () => {
 // display only Other projects
 
 otherButton.addEventListener('click', () => {
-  otherSection.style.display = 'flex';
+  otherSection.style.display = 'grid';
   otherButton.classList.add('selected');
 
   jsSection.style.display = 'none';

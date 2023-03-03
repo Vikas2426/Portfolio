@@ -17,28 +17,28 @@ export default function createCards(projectList, section) {
 </a>
 </div>
 
-<div class="img-description">
+<div class="img-description card-desc">
 <p class="project-name">${projectList.names[i]}</p> 
   <p class="project-desc">
   ${projectList.tech[i]}
   </p>
-  </div>
-
+  
   <div class='card-button-container'>
   <button class='card-button'>
   <a href='${projectList.githubLinks[i]}' target="_blank" class='demo-btn'>
   <i class="fa fa-github-square" aria-hidden="true"></i>
   Code
   </a>
-</button>  
-<button class='card-button'>
-<a href='${projectList.demoLinks[i]}'target="_blank" class='demo-btn'>
-Live
-<i class="fas fa-external-link-alt" aria-hidden="true"></i>
-</a>
-</button>
-</div>
-
+  </button>  
+  <button class='card-button'>
+  <a href='${projectList.demoLinks[i]}'target="_blank" class='demo-btn'>
+  Live
+  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+  </a>
+  </button>
+  </div>
+  </div>
+  
 </section>
 `;
   }
