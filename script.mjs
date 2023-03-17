@@ -1,6 +1,5 @@
 import experience from "./experience.min.mjs";
 import mernProjectList from "./mernProject.min.mjs";
-// import vanillaProjectsList from './vanillaProjects.min.mjs';
 import otherProjectList from './otherProjects.min.mjs';
 import createCards from './createCards.min.mjs';
 
@@ -79,10 +78,6 @@ const mernButton = document.querySelector(".mern");
 const mernSection = document.querySelector(".mern-section");
 createCards(mernProjectList, mernSection);
 
-// vanillaProjectDiv
-// const jsButton = document.querySelector(".javascript");
-// const jsSection = document.querySelector(".js-section");
-// createCards(vanillaProjectsList, jsSection);
 
 //   otherProjectDiv
 const otherButton = document.querySelector(".other");
@@ -90,43 +85,24 @@ const otherSection = document.querySelector(".other-section");
 createCards(otherProjectList, otherSection);
 
 
-
 // display only MERN projects
 mernButton.addEventListener('click', () => {
   mernSection.style.display = 'flex';
   mernButton.classList.add('selected');
 
-  jsSection.style.display = 'none';
   otherSection.style.display = 'none';
-
-  jsButton.classList.remove('selected');
   otherButton.classList.remove('selected');
 });
 
-// display only Javascript projects
 
-// jsButton.addEventListener('click', () => {
-//   jsSection.style.display = 'flex';
-//   jsButton.classList.add('selected');
-
-//   mernSection.style.display = 'none';
-//   otherSection.style.display = 'none';
-
-//   mernButton.classList.remove('selected');
-//   otherButton.classList.remove('selected');
-// });
 
 // display only Other projects
-
 otherButton.addEventListener('click', () => {
   otherSection.style.display = 'flex';
   otherButton.classList.add('selected');
 
-  // jsSection.style.display = 'none';
   mernSection.style.display = 'none';
-
   mernButton.classList.remove('selected');
-  // jsButton.classList.remove('selected');
 })
 
 // reveal cards on scroll
