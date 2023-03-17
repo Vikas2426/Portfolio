@@ -2,7 +2,8 @@ import experience from "./experience.min.mjs";
 import mernProjectList from "./mernProject.min.mjs";
 import otherProjectList from './otherProjects.min.mjs';
 import createCards from './createCards.min.mjs';
-
+import addBlogList from "./blog.min.mjs";
+import blogList from "./blogList.min.mjs";
 // Copyright text in footer
 const footer = document.querySelector("footer");
 const year = new Date().getFullYear();
@@ -123,6 +124,9 @@ function revealUp() {
 
 window.addEventListener('scroll', revealUp);
 
+// add blog list
 
+const blogContainer = document.getElementsByClassName('blog-container')[0];
+addBlogList(blogContainer, blogList);
 
 

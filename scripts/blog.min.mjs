@@ -1,0 +1,1 @@
+const addBlogList=(container,blogList)=>{let list="";for(let idx=0;idx<blogList.link.length;idx++)list+=`<a href=${blogList.link[idx]} target="_blank">\n    <div class="blog">\n    ${idx+1+". "+blogList.title[idx]} \n    <i> ${blogList.description[idx]}...</i>\n    </div >\n  </a >\n    `;container.innerHTML=list};export default addBlogList;
