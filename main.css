@@ -22,6 +22,13 @@ body {
   animation: loading 1s linear infinite alternate;
 }
 
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  place-items: center;
+  }
 @keyframes loading {
   0% {
     background-color: hsl(200, 20%, 70%);
@@ -228,11 +235,30 @@ body {
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  text-overflow: ellipsis;
 }
-
+.blog-container>a{
+  background-color: var(--timeline-body-bg);
+}
 .blog {
-  margin-bottom: 2%;
+padding: 5%;
+  color: white !important;
+  width: 100%;
+  height: 100%;
+line-height: 1.5em;
+font-weight: 300;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+overflow: hidden;
+}
+.blog::first-line{
+font-weight: 400;
+}
+.blog-container > a {
+  text-decoration: none;
+}
+.blog-container>a:hover, .card:hover{
+  background-color: #31364b;
+  border-radius: var(--timeline-body-round);
+  box-shadow: var(--timeline-body-shadow);
 }
 
 .custom-shape-divider-bottom-1629733848 {
@@ -376,15 +402,7 @@ body {
   display: flex;
 }
 
-.blog-img:hover,
-.blog-img:focus {
-  transform: scale(1.02);
-}
 
-.blog-img {
-  width: 300px;
-  height: 250px;
-}
 
 #contact {
   position: relative;
@@ -775,7 +793,7 @@ footer {
   margin-bottom: 1.4rem;
 }
 
-.designation, .resume, .blog>a  {
+.designation, .resume{
   padding: 4px 8px;
   border-radius: 3px;
   font-size: 1em;

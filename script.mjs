@@ -1,6 +1,6 @@
 import experience from "./experience.min.mjs";
 import mernProjectList from "./mernProject.min.mjs";
-import vanillaProjectsList from './vanillaProjects.min.mjs';
+// import vanillaProjectsList from './vanillaProjects.min.mjs';
 import otherProjectList from './otherProjects.min.mjs';
 import createCards from './createCards.min.mjs';
 
@@ -63,13 +63,13 @@ addExperience();
 var experiences = document.querySelectorAll('.timeline-container');
 function revealRight() {
   let windowHeight = window.innerHeight;
-  experiences.forEach(experience=>{
+  experiences.forEach(experience => {
     let experienceTop = experience.getBoundingClientRect().top;
     let diff = 50;
     if (experienceTop < windowHeight - diff) {
       experience.classList.add('after-timeline-animation');
-  }
-})
+    }
+  })
 }
 window.addEventListener('scroll', revealRight);
 
@@ -80,9 +80,9 @@ const mernSection = document.querySelector(".mern-section");
 createCards(mernProjectList, mernSection);
 
 // vanillaProjectDiv
-const jsButton = document.querySelector(".javascript");
-const jsSection = document.querySelector(".js-section");
-createCards(vanillaProjectsList, jsSection);
+// const jsButton = document.querySelector(".javascript");
+// const jsSection = document.querySelector(".js-section");
+// createCards(vanillaProjectsList, jsSection);
 
 //   otherProjectDiv
 const otherButton = document.querySelector(".other");
@@ -105,16 +105,16 @@ mernButton.addEventListener('click', () => {
 
 // display only Javascript projects
 
-jsButton.addEventListener('click', () => {
-  jsSection.style.display = 'flex';
-  jsButton.classList.add('selected');
+// jsButton.addEventListener('click', () => {
+//   jsSection.style.display = 'flex';
+//   jsButton.classList.add('selected');
 
-  mernSection.style.display = 'none';
-  otherSection.style.display = 'none';
+//   mernSection.style.display = 'none';
+//   otherSection.style.display = 'none';
 
-  mernButton.classList.remove('selected');
-  otherButton.classList.remove('selected');
-});
+//   mernButton.classList.remove('selected');
+//   otherButton.classList.remove('selected');
+// });
 
 // display only Other projects
 
@@ -122,11 +122,11 @@ otherButton.addEventListener('click', () => {
   otherSection.style.display = 'flex';
   otherButton.classList.add('selected');
 
-  jsSection.style.display = 'none';
+  // jsSection.style.display = 'none';
   mernSection.style.display = 'none';
 
   mernButton.classList.remove('selected');
-  jsButton.classList.remove('selected');
+  // jsButton.classList.remove('selected');
 })
 
 // reveal cards on scroll
